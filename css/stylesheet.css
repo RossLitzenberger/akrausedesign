@@ -1,0 +1,144 @@
+body{
+  margin:0;
+  padding:0;
+}
+.screen-divider{
+  position:relative;
+  display:block;
+  height:100vh;
+}
+.top-left{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:50%;
+  background:#ff89fd;
+  transition:height .2s linear 0s;
+}
+img{
+  display:block;
+  height:50px;
+  width:auto;
+  margin:auto;
+  cursor:pointer;
+}
+/* initial placements for all icons */
+.icon1{
+  position:absolute;
+  bottom:15px;
+  right:15px;
+}
+.icon1:hover{
+  background:rgba(255,255,255,0.2);
+}
+.icon2{
+  position:absolute;
+  top:15px;
+  right:15px;
+}
+.icon3{
+  position:absolute;
+  bottom:15px;
+  left:15px;
+}
+.icon3:hover{
+  background:rgba(255,255,255,0.2);
+}
+.icon4{
+  position:absolute;
+  top:15px;
+  left:15px;
+}
+.icon4:hover{
+  background:rgba(255,255,255,0.2);
+}
+/* END placements for all icons */
+/* initial placements for all of the base elements */
+.bottom-left{
+  display:block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:50%;
+  height:50%;
+  background:#d5eeff;
+  transition: width .2s linear 0s;
+}
+.top-right{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  height:50%;
+  width:50%;
+  background:#78BBE6;
+  z-index: 9999;
+  transition: height .2s linear 0s;
+}
+.bottom-right{
+  display:block;
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:50%;
+  width:50%;
+  background:#1B435D;
+  transition: width .2s linear 0s;
+}
+
+/* END icon placements */
+
+/* icon hover transitions */
+
+.icon1open{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.icon2open{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+.icon3open{
+  position:absolute;
+  top:0;
+  right:0;
+}
+.icon4open{
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+/* END icon hover transitions */
+
+
+
+/************************************************/
+/* content for each of the slides down here */
+/************************************************/
+
+.about-content{
+  display:none;
+  width:100%;
+  height:100%;
+  color:white;
+  font-family:'Roboto';
+}
+.about-content-title{
+  font-size:50px;
+  display:block;
+  padding:25px 0;
+  margin-left:30px;
+}
+.about-content-info{
+  font-size:24px;
+  width:30%;
+}
+
+/************************************************/
+/* END content for each of the slides down here */
+/************************************************/
