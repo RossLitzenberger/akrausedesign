@@ -2,10 +2,54 @@ body{
   margin:0;
   padding:0;
 }
+/* half circle menu thingy */
+.pull-me{
+  display:block;
+  z-index: 100;
+  position:fixed;
+  top:0;
+  left:50%;
+  margin:0 -50px;
+  height:50px;
+  width:100px;
+  border-radius: 0 0 100px 100px;
+  -moz-border-radius: 0 0 100px 100px;
+  -webkit-border-radius: 0 0 100px 100px;
+  background:white;
+  transition:top .19s ease-in-out;
+}
+.pull-me img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:block;
+  height:40px;
+  width:40px;
+  margin:-20px 0 0 -20px;
+}
+.pull-down{
+  position:absolute;
+  top:100px;
+  transition:top .19s ease-in-out;
+}
+/* end half cirle menu thingy */
+
+/* screen-divider changer */
+.look-n-feel{
+  height:100px;
+  display:block;
+  background:white;
+  display:none;
+}
+
+/* end screen-divider changer*/
+
+
 .screen-divider{
-  position:relative;
+  position:fixed;
   display:block;
   height:100vh;
+  width:100%;
 }
 .top-left{
   display:block;
@@ -20,39 +64,6 @@ body{
   transition:all .2s ease-in-out;
   position:relative;
 }
-img{
-  display:block;
-  height:50px;
-  width:auto;
-  cursor:pointer;
-  padding:15px;
-}
-img:hover{
-  background:black;
-}
-/* initial placements for all icons */
-.icon1{
-  position:absolute;
-  top:0;
-  left:0;
-}
-.icon2{
-  position:absolute;
-  top:0;
-  left:0;
-}
-.icon3{
-  position:absolute;
-  top:0;
-  left:0;
-}
-.icon4{
-  position:absolute;
-  top:0;
-  left:0;
-}
-/* END placements for all icons */
-/* initial placements for all of the base elements */
 .bottom-left{
   display:block;
   position:absolute;
@@ -71,7 +82,6 @@ img:hover{
   height:50%;
   width:50%;
   background:#78BBE6;
-  z-index: 9999;
   transition: height .2s linear 0s;
 }
 .bottom-right{
@@ -83,4 +93,39 @@ img:hover{
   width:50%;
   background:#1B435D;
   transition: width .2s linear 0s;
+}
+
+.iconset{
+  z-index:10;
+}
+.iconset img{
+  display:block;
+  height:50px;
+  width:50px;
+  cursor:pointer;
+  padding:15px;
+}
+.iconset img:hover{
+  background:rgba(255,255,255,0.4);
+  border-radius:10px;
+}
+.icon1{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.icon2{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+.icon3{
+  position:absolute;
+  top:0;
+  right:0;
+}
+.icon4{
+  position:absolute;
+  bottom:0;
+  right:0;
 }
