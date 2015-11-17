@@ -20,6 +20,7 @@ $(document).ready(function(){
   });
   */
 
+  // 4d array for searching through elements
   var elements = [
     "#top-left",
     "#bottom-left",
