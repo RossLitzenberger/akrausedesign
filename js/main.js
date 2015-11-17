@@ -58,7 +58,6 @@ $(document).ready(function(){
 
   }
 
-  toDefault();
 /*
 
 jQuery('#id').click(function(){
