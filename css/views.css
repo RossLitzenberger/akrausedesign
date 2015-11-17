@@ -95,6 +95,9 @@
 }
 /* END column view */
 
+
+
+
 /* START row view */
 
 .row-top-left{
@@ -139,19 +142,35 @@
 
 .border-top-left{
   position:absolute;
-
+  top:0;
+  left:0;
+  width:25%;
+  height:75%;
+  background:#ff89fd;
 }
 .border-bottom-left{
   position:absolute;
-
+  bottom:0;
+  left:0;
+  height:25%;
+  width:75%;
+  background:#d5eeff;
 }
 .border-top-right{
   position:absolute;
-
+  top:0;
+  right:0;
+  height:25%;
+  width:75%;
+  background:#78BBE6;
 }
 .border-bottom-right{
   position:absolute;
-
+  bottom:0;
+  right:0;
+  width:25%;
+  height:75%;
+  background:#1B435D;
 }
 
 /* END border view */

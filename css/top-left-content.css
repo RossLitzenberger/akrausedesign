@@ -1,0 +1,17 @@
+#top-left .title{
+  position:absolute;
+  bottom:20%;
+  right:20%;
+  font-family:'Roboto';
+  font-size:50px;
+  color:#d5eeff;
+}
+#top-left .kicker{
+  position:absolute;
+  bottom:12%;
+  right:20%;
+  font-family:'Roboto';
+  font-size:22px;
+  font-style:italic;
+  color:#d5eeff;
+}
