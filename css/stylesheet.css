@@ -24,29 +24,32 @@ img{
   display:block;
   height:50px;
   width:auto;
-  margin:auto;
   cursor:pointer;
+  padding:15px;
+}
+img:hover{
+  background:black;
 }
 /* initial placements for all icons */
 .icon1{
   position:absolute;
-  bottom:15px;
-  right:15px;
+  top:0;
+  left:0;
 }
 .icon2{
   position:absolute;
-  top:15px;
-  right:15px;
+  top:0;
+  left:0;
 }
 .icon3{
   position:absolute;
-  bottom:15px;
-  left:15px;
+  top:0;
+  left:0;
 }
 .icon4{
   position:absolute;
-  top:15px;
-  left:15px;
+  top:0;
+  left:0;
 }
 /* END placements for all icons */
 /* initial placements for all of the base elements */
