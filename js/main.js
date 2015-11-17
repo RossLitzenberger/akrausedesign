@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.pull-me').click(function(){
     $('.changer').slideToggle('fast');
   });
-  /*
+
   // column layout clicking action
   $('.column-layout').click(function(){
     $('#top-left').toggleClass('def-top-left col-top-left');
@@ -18,45 +18,7 @@ $(document).ready(function(){
     $('.border-layout').toggle('fast');
     $('.default-layout').toggle('fast');
   });
-  */
 
-  // 4d array for searching through elements
-  var elements = [
-    "#top-left",
-    "#bottom-left",
-    "#top-right",
-    "#bottom-right"
-  ];
-
-  var defaults = [
-    ".def-top-left",
-    ".def-bottom-left",
-    ".def-top-right",
-    ".def-bottom-right",
-  ];
-
-  var layoutBtns = [
-    ".column-layout",
-    ".row-layout",
-    ".default-layout",
-    ".border-layout"
-  ];
-
-  var toDefault = function(){
-
-    for(var a = 0; a < elements.length; a++){
-      console.log(elements[a]);
-    }
-    for(var b = 0; b < defaults.length; b++){
-      console.log(defaults[b]);
-    }
-
-    for(var c = 0; c < layoutBtns.length; c++)
-    {
-      console.log(layoutBtns[c]);
-    }
-
-  }
 
 /*
 
