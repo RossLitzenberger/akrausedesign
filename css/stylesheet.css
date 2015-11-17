@@ -9,39 +9,38 @@ body{
   position:fixed;
   top:0;
   left:50%;
-  margin:0 -50px;
-  height:50px;
-  width:100px;
-  border-radius: 0 0 100px 100px;
-  -moz-border-radius: 0 0 100px 100px;
-  -webkit-border-radius: 0 0 100px 100px;
-  background:white;
-  transition:top .19s ease-in-out;
+  height:40px;
+  width:auto;
+  background:black;
 }
 .pull-me img{
   position:absolute;
   top:50%;
   left:50%;
+  padding:20px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  background:rgba(0,0,0,0.2);
   display:block;
   height:40px;
   width:40px;
-  margin:-20px 0 0 -20px;
-}
-.pull-down{
-  position:absolute;
-  top:100px;
-  transition:top .19s ease-in-out;
+  margin:-20px 0 0 -35px;
 }
 /* end half cirle menu thingy */
 
 /* screen-divider changer */
-.look-n-feel{
-  height:100px;
-  display:block;
-  background:white;
+.changer{
   display:none;
+  height:100px;
+  width:100%;
+  display:block;
+  background:rgba(0,0,0,0.6);
 }
-
+.icon-pos{
+  position:absolute;
+  top:100px;
+  z-index: 10;
+}
 /* end screen-divider changer*/
 
 
@@ -51,6 +50,9 @@ body{
   height:100vh;
   width:100%;
 }
+
+/* START initial layout */
+
 .top-left{
   display:block;
   position:absolute;
@@ -95,6 +97,8 @@ body{
   transition: width .2s linear 0s;
 }
 
+/* END inital layout  */
+
 .iconset{
   z-index:10;
 }
@@ -129,3 +133,82 @@ body{
   bottom:0;
   right:0;
 }
+/* LAYOUT DESIGN BUTTONS */
+
+.left-side{
+  height:80px;
+  width:30%;
+  position:absolute;
+  top:10px;
+  left:15%;
+  background:red;
+  border-radius:5px;
+  display:block;
+  text-align:center;
+}
+.left-side nav{
+  margin:10px;
+}
+.left-side nav a{
+  margin-right:16px;
+  margin-left:16px;
+}
+.right-side{
+  height:80px;
+  width:30%;
+  position:absolute;
+  top:10px;
+  right:15%;
+  background:red;
+  border-radius:5px;
+  display:block;
+  text-align:center;
+}
+.right-side nav{
+  margin:10px;
+}
+.right-side nav a{
+  margin-right:16px;
+  margin-left:16px;
+}
+/* END LAYOUT DESIGN BUTTONS */
+
+
+/* views: quarter(default), column, row, border */
+
+
+/* START column view */
+
+.col-top-left{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:25%;
+  background:red;
+}
+.col-bottom-left{
+  position:absolute;
+  top:0;
+  left:25%;
+  height:100%;
+  width:25%;
+  background:green;
+}
+.col-top-right{
+  position:absolute;
+  top:0;
+  left:50%;
+  height:100%;
+  width:25%;
+  background:orange;
+}
+.col-bottom-right{
+  position:absolute;
+  top:0;
+  left:75%;
+  height:100%;
+  width:25%;
+  background:yellow;
+}
+/* END column view */
