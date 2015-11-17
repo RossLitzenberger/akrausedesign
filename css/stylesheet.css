@@ -2,101 +2,14 @@ body{
   margin:0;
   padding:0;
 }
-/* half circle menu thingy */
-.pull-me{
-  display:block;
-  z-index: 100;
-  position:fixed;
-  top:0;
-  left:50%;
-  height:40px;
-  width:auto;
-}
-.pull-me img{
-  position:absolute;
-  top:50%;
-  left:50%;
-  padding:20px;
-  border-bottom-left-radius:15px;
-  border-bottom-right-radius:15px;
-  background:rgba(0,0,0,0.2);
-  display:block;
-  height:40px;
-  width:40px;
-  margin:-20px 0 0 -35px;
-}
-/* end half cirle menu thingy */
-
-/* screen-divider changer */
-.changer{
-  display:none;
-  height:100px;
-  width:100%;
-  display:block;
-  background:rgba(0,0,0,0.4);
-}
-.icon-pos{
-  position:absolute;
-  top:100px;
-  z-index: 10;
-}
-/* end screen-divider changer*/
-
 
 .screen-divider{
   position:fixed;
   display:block;
   height:100vh;
   width:100%;
+  box-shadow:2px 2px 12px #111;
 }
-
-/* START initial layout */
-
-.top-left{
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  width:50%;
-  height:50%;
-  background:#ff89fd;
-  -webkit-transition:all .2s ease-in-out;
-  -moz-transition:all .2s ease-in-out;
-  transition:all .2s ease-in-out;
-  position:relative;
-}
-.bottom-left{
-  display:block;
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:50%;
-  height:50%;
-  background:#d5eeff;
-  transition: width .2s linear 0s;
-}
-.top-right{
-  display:block;
-  position:absolute;
-  top:0;
-  right:0;
-  height:50%;
-  width:50%;
-  background:#78BBE6;
-  transition: height .2s linear 0s;
-}
-.bottom-right{
-  display:block;
-  position:absolute;
-  bottom:0;
-  right:0;
-  height:50%;
-  width:50%;
-  background:#1B435D;
-  transition: width .2s linear 0s;
-}
-
-/* END inital layout  */
 
 .iconset{
   z-index:10;
@@ -140,7 +53,6 @@ body{
   position:absolute;
   top:10px;
   left:15%;
-  background:red;
   border-radius:5px;
   display:block;
   text-align:center;
@@ -158,7 +70,6 @@ body{
   position:absolute;
   top:10px;
   right:15%;
-  background:red;
   border-radius:5px;
   display:block;
   text-align:center;
@@ -171,83 +82,6 @@ body{
   margin-left:16px;
 }
 /* END LAYOUT DESIGN BUTTONS */
-
-
-/* views: quarter(default), column, row, border */
-
-
-/* START column view */
-
-.col-top-left{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:25%;
-  animation:col_move 1s ease-in-out;
-}
-.col-bottom-left{
-  position:absolute;
-  top:0;
-  left:25%;
-  height:100%;
-  width:25%;
-  animation:col_move .8s ease-in-out;
-}
-.col-top-right{
-  position:absolute;
-  top:0;
-  left:50%;
-  height:100%;
-  width:25%;
-  animation:col_move .6s ease-in-out;
-}
-.col-bottom-right{
-  position:absolute;
-  top:0;
-  left:75%;
-  height:100%;
-  width:25%;
-  animation:col_move .4s ease-in-out;
-}
-/* END column view */
-
-/* START row view */
-
-.row-top-left{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:25%;
-  animation:row_move 1s ease-in-out;
-}
-.row-bottom-left{
-  position:absolute;
-  top:25%;
-  left:0;
-  width:100%;
-  height:25%;
-  animation:row_move .8s ease-in-out;
-}
-.row-top-right{
-  position:absolute;
-  top:50%;
-  left:0;
-  width:100%;
-  height:25%;
-  animation:row_move .6s ease-in-out;
-}
-.row-bottom-right{
-  position:absolute;
-  top:75%;
-  left:0;
-  width:100%;
-  height:25%;
-  animation:row_move .4s ease-in-out;
-}
-
-/* END row view */
 
 
 
@@ -283,7 +117,7 @@ body{
 
 /* border animation */
 @-webkit-keyframes border_move{
-  
+
 }
 @-moz-keyframes border_move{
 

@@ -12,8 +12,13 @@
     <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Playball'>
     <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
+    <link type='text/css' rel='stylesheet' href='css/views.css'>
+    <link type='text/css' rel='stylesheet' href='css/menu.css'>
+    <link type='text/css' rel='stylesheet' href='css/animations.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src='js/main.js'></script>
+    <script src='js/img_switcher.js'></script>
+    <script src='js/layout_opener.js'></script>
   </head>
   <body>
     <div class='main-menu'>
@@ -24,32 +29,40 @@
       <div class='changer'>
         <div class='right-side'>
           <nav>
-            <img src='http://placehold.it/60x60' class='column-layout'>
-            <img src='http://placehold.it/60x60' class='row-layout'>
+            <div class='column-layout'>
+              <img src='img/change/column_icon.jpg'>
+              <img src='img/change/default_icon.jpg' style='display:none;'>
+            </div>
+            <div class='row-layout'>
+              <img src='img/change/row_icon.jpg'>
+              <img src='img/change/default_icon.jpg' style='display:none;'>
+            </div>
           </nav>
         </div>
         <div class='left-side'>
           <nav>
-            <img src='http://placehold.it/60x60' class='default-layout'>
-            <img src='http://placehold.it/60x60' class='border-layout'>
+            <div class='default-layout'>
+              <img src='img/change/default_icon.jpg'>
+            </div>
+            <div class='border-layout'>
+              <img src='img/change/border_icon.jpg'>
+              <img src='img/change/default_icon.jpg' style='display:none;'>
+            </div>
           </nav>
         </div>
       </div>
     </div>
     <div class='screen-divider'>
-      <!-- <div class='menu'>
-        <img src='img/menu.png'>
-      </div>-->
-      <div class='top-left'>
+      <div id='top-left' class='def-top-left'>
 
       </div>
-      <div class='bottom-left'>
+      <div id='bottom-left' class='def-bottom-left'>
 
       </div>
-      <div class='top-right'>
+      <div id='top-right' class='def-top-right'>
 
       </div>
-      <div class='bottom-right'>
+      <div id='bottom-right' class='def-bottom-right'>
 
       </div>
     </div>
