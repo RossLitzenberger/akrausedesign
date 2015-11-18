@@ -1,0 +1,6 @@
+.home-title, .home-description,
+.about-title, .about-description,
+.work-title, .work-description,
+.contact-title, .contact-title{
+  display:none;
+}
