@@ -23,7 +23,7 @@ body{
 }
 .iconset img:hover{
   background:rgba(255,255,255,0.4);
-  border-radius:10px;
+  border-radius:5px;
 }
 .icon1{
   position:absolute;
