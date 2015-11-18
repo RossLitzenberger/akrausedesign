@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   $('.pull-me').click(function(){
     $('.ui-changer-menu').slideToggle('fast');
+
   });
 
   $('#column-layout').click(function(){

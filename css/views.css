@@ -135,9 +135,6 @@
 
 /* END row view */
 
-
-
-
 /* START border view */
 
 .border-top-left{
@@ -190,3 +187,8 @@
   box-shadow:1px 1px 6px #111;
 }
 /* END reset the display properties */
+
+
+/* when menu is clicked, pull back areas */
+  
+/*  */
