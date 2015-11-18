@@ -1,5 +1,5 @@
 // intelligent.js
-/*
+
 var a = 5;
 var b = 5;
 var c = 5;
@@ -9,7 +9,7 @@ var d = 5;
 var z = 1;
 
 
-for(var i = 1; i < default_layout; i++)
+for(var i = 1; i < a; i++)
 {
   for(var j = 1; j < b; j++)
   {
@@ -17,17 +17,13 @@ for(var i = 1; i < default_layout; i++)
     {
       for(var e = 1; e < d; e++)
       {
-        document.write(i + " " + j + " " + f + " " + e + " ");
-        document.write(i + " " + j + " " + f + " " + e + " ");
-        document.write(i + " " + j + " " + f + " " + e + " ");
-        document.write(i + " " + j + " " + f + " " + e + "<br>");
-        console.log("line: " + z++);
+        ++z;
       }
     }
   }
 }
-*/
-/*
+console.log('lines: ' + z);
+
 // default, column, row, border
 
 var default_layout = {
@@ -66,7 +62,6 @@ var border_layout = {
 
 
 
-*/
 
 
 
@@ -76,11 +71,11 @@ var border_layout = {
 */
 
 
-/*
-// console.log(border_layout.topLeft);
-// console.log(border_layout.bottomLeft);
-// console.log(border_layout.topRight);
-// console.log(border_layout.bottomRight);
+
+console.log(border_layout.topLeft);
+console.log(border_layout.bottomLeft);
+console.log(border_layout.topRight);
+console.log(border_layout.bottomRight);
 
 
 // print out the length of the objects
@@ -103,4 +98,3 @@ for(var i in default_layout)
   }
 }
 console.log(arr);
-*/

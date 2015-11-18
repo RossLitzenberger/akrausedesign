@@ -5,18 +5,18 @@ $(document).ready(function(){
 
   $('.column-layout').click(function(){
     $(this).find('img').toggle();
-    $('.row-layout').toggle();
-    $('.border-layout').toggle();
+    $('.row-layout').toggle('fast');
+    $('.border-layout').toggle('fast');
   });
   $('.row-layout').click(function(){
     $(this).find('img').toggle();
-    $('.column-layout').toggle();
-    $('.border-layout').toggle();
+    $('.column-layout').toggle('fast');
+    $('.border-layout').toggle('fast');
   });
   $('.border-layout').click(function(){
     $(this).find('img').toggle();
-    $('row-layout').toggle();
-    $('.column-layout').toggle();
+    $('row-layout').toggle('fast');
+    $('.column-layout').toggle('fast');
   });
 
 });
