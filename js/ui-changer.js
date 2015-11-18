@@ -18,4 +18,5 @@ $(document).ready(function(){
     $('row-layout').toggle();
     $('.column-layout').toggle();
   });
+
 });
