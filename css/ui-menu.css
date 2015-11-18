@@ -1,0 +1,55 @@
+.ui-changer-menu{
+  display:block;
+  position:absolute;
+  top:75%;
+  left:50%;
+  height:80px;
+  width:375px;
+  margin:-187.5px 0 0 -187.5px;
+  background:rgba(0,0,0,0.5);
+  border-radius:10px;
+  box-shadow:2px 2px 5px #222;
+}
+.ui-changer-menu img{
+  height:60px;
+  width:60px;
+  margin:10px 15px;
+  border-radius:6px;
+  box-shadow: 2px 2px 5px #222;
+}
+.ui-changer-menu img:hover{
+  animation: turn .2s infinite;
+
+}
+
+
+/*
+.changer{
+  display:none;
+  height:100px;
+  width:100%;
+  background:rgba(0,0,0,0.4);
+}
+
+
+
+
+
+.right-side nav img{
+  height:60px;
+  width:60px;
+  border-radius:6px;
+}
+.right-side nav img:hover{
+  animation: turn .2s infinite;
+}
+.left-side nav img{
+  height:60px;
+  width:60px;
+  border-radius:6px;
+}
+.left-side nav img:hover{
+  animation: turn .2s infinite;
+}
+
+*/

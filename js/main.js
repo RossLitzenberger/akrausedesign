@@ -4,5 +4,4 @@ $(document).ready(function(){
   // work in terms of switching between layouts
 
 
-
 });

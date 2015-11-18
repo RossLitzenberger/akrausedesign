@@ -176,17 +176,17 @@
 /* END border view */
 
 /* START reset the display properties */
-.column-layout, .row-layout{
+#column-layout, #row-layout{
   display:inline-block;
 }
-.default-layout, .border-layout{
+#default-layout, #border-layout{
   display:inline-block;
 }
 
-.column-layout img, .row-layout img{
+#column-layout img, #row-layout img{
   box-shadow:1px 1px 6px #111;
 }
-.default-layout img, .border-layout img{
+#default-layout img, #border-layout img{
   box-shadow:1px 1px 6px #111;
 }
 /* END reset the display properties */

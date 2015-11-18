@@ -14,45 +14,36 @@
     <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
     <link type='text/css' rel='stylesheet' href='css/views.css'>
     <link type='text/css' rel='stylesheet' href='css/menu.css'>
+    <link type='text/css' rel='stylesheet' href='css/ui-menu.css'>
     <link type='text/css' rel='stylesheet' href='css/animations.css'>
-    <link type='text/css' rel='stylesheet' href='css/top-left-content.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src='js/main.js'></script>
     <script src='js/ui-changer.js'></script>
-    <script src='js/intelligent.js'></script>
   </head>
   <body>
-    <div class='main-menu'>
-
-      <div class='pull-me'>
-        <img src='img/menu.png'>
-      </div>
-      <div class='changer'>
-        <div class='right-side'>
-          <nav>
-            <div id='infoToggler' class='column-layout'>
-              <img src='img/change/column_icon.jpg'>
-              <img src='img/change/default_icon.jpg' style='display:none;'>
-            </div>
-            <div id='infoToggler' class='row-layout'>
-              <img src='img/change/row_icon.jpg'>
-              <img src='img/change/default_icon.jpg' style='display:none;'>
-            </div>
-          </nav>
-        </div>
-        <div class='left-side'>
-          <nav>
-            <div id='infoToggler' class='default-layout'>
-              <img src='img/change/default_icon.jpg'>
-            </div>
-            <div id='infoToggler' class='border-layout'>
-              <img src='img/change/border_icon.jpg'>
-              <img src='img/change/default_icon.jpg' style='display:none;'>
-            </div>
-          </nav>
-        </div>
-      </div>
+    <div class='pull-me'>
+      <img src='img/menu.png'>
     </div>
+    <div class='ui-changer-menu' style='display:block;z-index:999999999999'>
+      <nav>
+        <div id='column-layout'>
+          <img src='img/change/column_icon.jpg'>
+          <img src='img/change/default_icon.jpg' style='display:none;'>
+        </div>
+        <div id='row-layout'>
+          <img src='img/change/row_icon.jpg'>
+          <img src='img/change/default_icon.jpg' style='display:none;'>
+        </div>
+        <div id='default-layout'>
+          <img src='img/change/default_icon.jpg'>
+        </div>
+        <div id='border-layout'>
+          <img src='img/change/border_icon.jpg'>
+          <img src='img/change/default_icon.jpg' style='display:none;'>
+        </div>
+      </nav>
+    </div>
+
     <div class='screen-divider'>
       <div id='top-left' class='def-top-left'>
 
