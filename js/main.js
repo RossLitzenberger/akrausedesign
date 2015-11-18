@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.pull-me').click(function(){
     $('.changer').slideToggle('fast');
   });
-
+/*
   // column layout clicking action
   $('.column-layout').click(function(){
     $('#top-left').toggleClass('def-top-left col-top-left');
@@ -18,6 +18,7 @@ $(document).ready(function(){
     $('.border-layout').toggle('fast');
     $('.default-layout').toggle('fast');
   });
+*/
 /*
 
 jQuery('#id').click(function(){
