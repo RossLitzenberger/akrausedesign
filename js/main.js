@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-
-  $('.pull-me').click(function(){
-    $('.changer').slideToggle('fast');
-  });
 /*
   // column layout clicking action
   $('.column-layout').click(function(){

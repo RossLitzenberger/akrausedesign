@@ -70,46 +70,10 @@ var border_layout = {
 
 
 
-
-
-
-
 /*
   create a click function that lets the system
   figure out what classes to add or remove on its own
 */
-
-var smartClick = function(event)
-{
-  $(event).click(function(){
-    $(event).removeClass();
-    consle.log('worked');
-  });
-}
-
-smartClick('.right-side > nav > div');
-smartClick('.right-side nav div');
-smartClick('.left-side nav div');
-smartClick('.left-side nav div');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*

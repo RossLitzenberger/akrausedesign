@@ -18,9 +18,9 @@
     <link type='text/css' rel='stylesheet' href='css/top-left-content.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src='js/main.js'></script>
-    <script src='js/img_switcher.js'></script>
+    <script src='js/ui-changer.js'></script>
     <script src='js/layout_opener.js'></script>
-    <script src='js/intelligent.js'></script>
+    <!--<script src='js/intelligent.js'></script>-->
   </head>
   <body>
     <div class='main-menu'>
@@ -31,11 +31,11 @@
       <div class='changer'>
         <div class='right-side'>
           <nav>
-            <div class='column-layout'>
+            <div id='infoToggler' class='column-layout'>
               <img src='img/change/column_icon.jpg'>
               <img src='img/change/default_icon.jpg' style='display:none;'>
             </div>
-            <div class='row-layout'>
+            <div id='infoToggler' class='row-layout'>
               <img src='img/change/row_icon.jpg'>
               <img src='img/change/default_icon.jpg' style='display:none;'>
             </div>
@@ -43,10 +43,10 @@
         </div>
         <div class='left-side'>
           <nav>
-            <div class='default-layout'>
+            <div id='infoToggler' class='default-layout'>
               <img src='img/change/default_icon.jpg'>
             </div>
-            <div class='border-layout'>
+            <div id='infoToggler' class='border-layout'>
               <img src='img/change/border_icon.jpg'>
               <img src='img/change/default_icon.jpg' style='display:none;'>
             </div>
