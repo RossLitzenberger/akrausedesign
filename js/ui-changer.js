@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(this).find('img').toggle();
     $('#row-layout').toggle('fast');
     $('#column-layout').toggle('fast');
-    $('#default-layout').toggle('fast');
+    $('#border-layout').toggle('fast');
   });
 
 });
