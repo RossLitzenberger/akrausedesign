@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
   $('.pull-me').click(function(){
-    $('.changer').slideToggle('fast');
+    $('.ui-changer-menu').slideToggle('fast');
   });
 
   $('#column-layout').click(function(){
