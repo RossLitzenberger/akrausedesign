@@ -49,7 +49,7 @@ $(document).ready(function(){
     $('#row-layout').toggle('fast');
     $('#column-layout').toggle('fast');
     $('#border-layout').toggle('fast');
-    $('.ui-changer-menu').slideToggle();
+
     // reset all classes to the beginning
   });
 
