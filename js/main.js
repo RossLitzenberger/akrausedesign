@@ -18,8 +18,6 @@ $(document).ready(function(){
     $('.border-layout').toggle('fast');
     $('.default-layout').toggle('fast');
   });
-
-
 /*
 
 jQuery('#id').click(function(){
