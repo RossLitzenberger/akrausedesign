@@ -106,6 +106,7 @@
   left:0;
   width:100%;
   height:25%;
+  background:#ff89fd;
   animation:row_move 1s ease-in-out;
 }
 .row-bottom-left{
@@ -114,6 +115,7 @@
   left:0;
   width:100%;
   height:25%;
+  background:#d5eeff;
   animation:row_move .8s ease-in-out;
 }
 .row-top-right{
@@ -122,6 +124,7 @@
   left:0;
   width:100%;
   height:25%;
+  background:#78BBE6;
   animation:row_move .6s ease-in-out;
 }
 .row-bottom-right{
@@ -130,6 +133,7 @@
   left:0;
   width:100%;
   height:25%;
+  background:#1B435D;
   animation:row_move .4s ease-in-out;
 }
 
