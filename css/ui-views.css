@@ -8,7 +8,7 @@
   width:50%;
   height:50%;
   background:#ff89fd;
-  position:relative;
+  /*position:relative*/
   z-index: 4;
   box-shadow:3px 3px 6px #888;
 }
