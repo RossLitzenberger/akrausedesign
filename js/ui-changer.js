@@ -81,8 +81,6 @@ $(document).ready(function(){
     $('#row-layout').toggle('fast');
     $('#column-layout').toggle('fast');
     $('#border-layout').toggle('fast');
-
-    // reset all classes to the beginning
   });
 
 });
