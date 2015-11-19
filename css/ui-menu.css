@@ -43,10 +43,11 @@
   display:block;
   z-index: 100;
   position:fixed;
-  top:0;
+  top:-10%;
   left:50%;
   height:40px;
   width:auto;
+  transition:top .1s ease-in-out;
 }
 .pull-me img{
   position:absolute;
@@ -62,6 +63,11 @@
   width:40px;
   margin:-20px 0 0 -35px;
   cursor:pointer;
+}
+.pull-me:hover{
+  position:absolute;
+  top:0;
+  transition:top .1s ease-in-out;
 }
 .pull-me img:hover{
   background:rgba(0,0,0,0.7);

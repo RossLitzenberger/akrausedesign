@@ -1,25 +1,4 @@
 
-/* UI VIEW OPEN styling */
-
-.def-top-left-open{
-  height:90%;
-  width:90%;
-}
-.def-bottom-left-open{
-  height:90%;
-  width:90%;
-}
-.def-top-right-open{
-  height:90%;
-  width:90%;
-}
-.def-bottom-right-open{
-  height:90%;
-  width:90%;
-}
-
-/* change the importance */
-
-.importance{
-  z-index: 50;
-}
+/* redo this section,
+not working for some stupid
+fucking reason. */
