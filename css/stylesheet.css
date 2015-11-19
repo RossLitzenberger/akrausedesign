@@ -19,12 +19,15 @@ body{
   height:50px;
   width:50px;
   cursor:pointer;
-  padding:15px;
-}
-.iconset img:hover{
-  background:rgba(255,255,255,0.4);
+  padding:5px;
   border-radius:5px;
 }
+.iconset img:hover{
+  background:rgba(0,0,0,0.7);
+}
+
+
+/* default icon layout */
 .icon1{
   position:absolute;
   top:0;
@@ -45,3 +48,78 @@ body{
   bottom:0;
   right:0;
 }
+/* END default icon layout */
+
+
+/* column icon layout */
+.icon1-column{
+  position:absolute;
+  bottom:20px;
+  left:10%;
+}
+.icon2-column{
+  position:absolute;
+  bottom:20px;
+  left:60%;
+}
+.icon3-column{
+  position:absolute;
+  bottom:20px;
+  left:35%;
+}
+.icon4-column{
+  position:absolute;
+  bottom:20px;
+  left:85%;
+}
+/* END column icon layout */
+
+
+
+/* row icon layout */
+.icon1-row{
+  position:absolute;
+  left:20px;
+  top:10%;
+}
+.icon2-row{
+  position:absolute;
+  left:20px;
+  top:60%;
+}
+.icon3-row{
+  position:absolute;
+  left:20px;
+  top:35%;
+}
+.icon4-row{
+  position:absolute;
+  left:20px;
+  top:85%;
+}
+/* END row icon layout */
+
+
+
+/* border icon layout */
+.icon1-border{
+  position:absolute;
+  bottom:35%;
+  left:10%;
+}
+.icon2-border{
+  position:absolute;
+  bottom:10%;
+  left:60%;
+}
+.icon3-border{
+  position:absolute;
+  bottom:60%;
+  left:85%;
+}
+.icon4-border{
+  position:absolute;
+  bottom:85%;
+  left:35%;
+}
+/* END border icon layout */

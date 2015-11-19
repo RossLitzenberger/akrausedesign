@@ -25,6 +25,9 @@
   top:20%;
   left:2%;
 }
+#close:hover{
+  animation: turn .2s infinite;
+}
 #close img{
   animation:none;
   height:30px;
@@ -53,6 +56,10 @@
   height:40px;
   width:40px;
   margin:-20px 0 0 -35px;
+  cursor:pointer;
+}
+.pull-me img:hover{
+  background:rgba(0,0,0,0.7);
 }
 .down{
   top:10%;
