@@ -2,5 +2,37 @@
 .about-title, .about-description,
 .work-title, .work-description,
 .contact-title, .contact-title{
-  display:none;
+  display:block;
+}
+.home-title .title{
+  font-family:'playball';
+  font-size:60px;
+  color:white;
+  position:absolute;
+  bottom:15%;
+  right:10%;
+}
+.home-title .kicker{
+  font-family:'playball';
+  font-size:20px;
+  color:white;
+  position:absolute;
+  bottom:9%;
+  right:10%;
+}
+.contact-title .title{
+  font-family:'playball';
+  font-size:40px;
+  color:white;
+  position:absolute;
+  top:15%;
+  left:10%;
+}
+.contact-title .kicker{
+  font-family:'playball';
+  font-size:20px;
+  color:white;
+  position:absolute;
+  left:10%;
+  top:26%;
 }
