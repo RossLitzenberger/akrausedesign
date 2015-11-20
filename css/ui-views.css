@@ -9,7 +9,6 @@
   height:50%;
   background:#ff89fd;
   /*position:relative*/
-  z-index: 4;
   box-shadow:3px 3px 6px #888;
 }
 .def-bottom-left{
@@ -19,7 +18,6 @@
   left:0;
   width:50%;
   height:50%;
-  z-index: 3;
   background:#d5eeff;
   box-shadow:3px 3px 6px #777;
 }
@@ -30,7 +28,6 @@
   right:0;
   height:50%;
   width:50%;
-  z-index: 2;
   background:#78BBE6;
   box-shadow:3px 3px 6px #666;
 }
@@ -41,7 +38,6 @@
   right:0;
   height:50%;
   width:50%;
-  z-index: 1;
   background:#1B435D;
   box-shadow:3px 3px 6px #555;
 }
