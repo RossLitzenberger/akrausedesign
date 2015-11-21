@@ -20,6 +20,23 @@ $(document).ready(function(){
     }
   );
 
+
+
+    // something here that can make the windows open
+    $('#top-left').click(function(){
+      $(this).toggleClass('def-top-left def-top-left-open');
+    });
+    $('#bottom-left').click(function(){
+      $(this).toggleClass('def-bottom-left def-bottom-left-open');
+    });
+    $('#top-right').click(function(){
+      $(this).toggleClass('def-top-right def-top-right-open');
+    });
+    $('#bottom-right').click(function(){
+      $(this).toggleClass('def-bottom-right def-bottom-right-open');
+    });
+
+
   $('#column-layout').click(function(){
     $(this).find('img').toggle();
     $('#row-layout').toggle('fast');
@@ -31,6 +48,21 @@ $(document).ready(function(){
     $('#bottom-left').toggleClass('def-bottom-left col-bottom-left');
     $('#top-right').toggleClass('def-top-right col-top-right');
     $('#bottom-right').toggleClass('def-bottom-right col-bottom-right');
+
+
+    // something here that makes the windows open
+    $('#top-left').click(function(){
+      $(this).toggleClass('col-top-left col-top-left-open');
+    });
+    $('#bottom-left').click(function(){
+      $(this).toggleClass('col-bottom-left col-bottom-left-open');
+    });
+    $('#top-right').click(function(){
+      $(this).toggleClass('col-top-right col-top-right-open');
+    });
+    $('#bottom-right').click(function(){
+      $(this).toggleClass('col-bottom-right col-bottom-right-open');
+    });
   });
 
   $('#row-layout').click(function(){
@@ -44,6 +76,22 @@ $(document).ready(function(){
     $('#bottom-left').toggleClass('def-bottom-left row-bottom-left');
     $('#top-right').toggleClass('def-top-right row-top-right');
     $('#bottom-right').toggleClass('def-bottom-right row-bottom-right');
+
+
+    // something here that makes the windows open
+
+    $('#top-left').click(function(){
+      $(this).toggleClass('row-top-left row-top-left-open');
+    });
+    $('#bottom-left').click(function(){
+      $(this).toggleClass('row-bottom-left row-bottom-left-open');
+    });
+    $('#top-right').click(function(){
+      $(this).toggleClass('row-top-right row-top-right-open');
+    });
+    $('#bottom-right').click(function(){
+      $(this).toggleClass('row-bottom-right row-bottom-right-open');
+    });
   });
 
   $('#border-layout').click(function(){
@@ -57,6 +105,22 @@ $(document).ready(function(){
     $('#bottom-left').toggleClass('def-bottom-left border-bottom-left');
     $('#top-right').toggleClass('def-top-right border-top-right');
     $('#bottom-right').toggleClass('def-bottom-right border-bottom-right');
+
+
+    // something here that makes the windows open
+
+    $('#top-left').click(function(){
+      $(this).toggleClass('border-top-left border-top-left-open');
+    });
+    $('#bottom-left').click(function(){
+      $(this).toggleClass('border-bottom-left border-bottom-left-open');
+    });
+    $('#top-right').click(function(){
+      $(this).toggleClass('border-top-right border-top-right-open');
+    });
+    $('#bottom-right').click(function(){
+      $(this).toggleClass('border-bottom-right border-bottom-right-open');
+    });
   });
 
   $('#default-layout').click(function(){

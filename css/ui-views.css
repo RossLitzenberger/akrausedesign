@@ -7,9 +7,8 @@
   left:0;
   width:50%;
   height:50%;
+  z-index: 4;
   background:#ff89fd;
-  /*position:relative*/
-  box-shadow:3px 3px 6px #888;
 }
 .def-bottom-left{
   display:block;
@@ -18,8 +17,8 @@
   left:0;
   width:50%;
   height:50%;
+  z-index: 3;
   background:#d5eeff;
-  box-shadow:3px 3px 6px #777;
 }
 .def-top-right{
   display:block;
@@ -28,8 +27,8 @@
   right:0;
   height:50%;
   width:50%;
+  z-index: 2;
   background:#78BBE6;
-  box-shadow:3px 3px 6px #666;
 }
 .def-bottom-right{
   display:block;
@@ -38,18 +37,24 @@
   right:0;
   height:50%;
   width:50%;
+  z-index: 1;
   background:#1B435D;
-  box-shadow:3px 3px 6px #555;
 }
 
 
 
 /* views: quarter(default), column, row, border */
 
+/*
+  remove all animations and then rework them after
+  everything is figured out.
+*/
+
 
 /* START column view */
 
 .col-top-left{
+  display:block;
   position:absolute;
   top:0;
   left:0;
@@ -58,9 +63,9 @@
   background:#ff89fd;
   z-index: 4;
   box-shadow:3px 3px 6px #888;
-  animation:col_move 1s ease-in-out;
 }
 .col-bottom-left{
+  display:block;
   position:absolute;
   top:0;
   left:25%;
@@ -69,9 +74,9 @@
   background:#d5eeff;
   z-index: 3;
   box-shadow:3px 3px 6px #888;
-  animation:col_move .8s ease-in-out;
 }
 .col-top-right{
+  display:block;
   position:absolute;
   top:0;
   left:50%;
@@ -80,9 +85,9 @@
   background:#78BBE6;
   z-index: 2;
   box-shadow:3px 3px 6px #888;
-  animation:col_move .6s ease-in-out;
 }
 .col-bottom-right{
+  display:block;
   position:absolute;
   top:0;
   left:75%;
@@ -91,7 +96,6 @@
   background:#1B435D;
   z-index: 1;
   box-shadow:3px 3px 6px #888;
-  animation:col_move .4s ease-in-out;
 }
 /* END column view */
 
@@ -101,6 +105,7 @@
 /* START row view */
 
 .row-top-left{
+  display:block;
   position:absolute;
   top:0;
   left:0;
@@ -109,9 +114,9 @@
   background:#ff89fd;
   z-index: 4;
   box-shadow:3px 3px 6px #888;
-  animation:row_move 1s ease-in-out;
 }
 .row-bottom-left{
+  display:block;
   position:absolute;
   top:25%;
   left:0;
@@ -120,9 +125,9 @@
   background:#d5eeff;
   z-index: 3;
   box-shadow:3px 3px 6px #888;
-  animation:row_move .8s ease-in-out;
 }
 .row-top-right{
+  display:block;
   position:absolute;
   top:50%;
   left:0;
@@ -131,9 +136,9 @@
   background:#78BBE6;
   z-index: 2;
   box-shadow:3px 3px 6px #888;
-  animation:row_move .6s ease-in-out;
 }
 .row-bottom-right{
+  display:block;
   position:absolute;
   top:75%;
   left:0;
@@ -142,7 +147,6 @@
   background:#1B435D;
   z-index: 1;
   box-shadow:3px 3px 6px #888;
-  animation:row_move .4s ease-in-out;
 }
 
 /* END row view */
@@ -150,6 +154,7 @@
 /* START border view */
 
 .border-top-left{
+  display:block;
   position:absolute;
   top:0;
   left:0;
@@ -160,6 +165,7 @@
   box-shadow:3px 3px 6px #888;
 }
 .border-bottom-left{
+  display:block;
   position:absolute;
   bottom:0;
   left:0;
@@ -170,6 +176,7 @@
   box-shadow:3px 3px 6px #888;
 }
 .border-top-right{
+  display:block;
   position:absolute;
   top:0;
   right:0;
@@ -180,6 +187,7 @@
   box-shadow:3px 3px 6px #888;
 }
 .border-bottom-right{
+  display:block;
   position:absolute;
   bottom:0;
   right:0;
@@ -189,7 +197,6 @@
   z-index: 1;
   box-shadow:3px 3px 6px #888;
 }
-
 /* END border view */
 
 /* START reset the display properties */
