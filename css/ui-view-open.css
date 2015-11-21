@@ -1,3 +1,4 @@
+/* default opening */
 .def-top-left-open{
   display:block;
   position:absolute;
@@ -38,6 +39,10 @@
   z-index: 5;
   background:#1b435d;
 }
+
+
+
+/* column opening */
 .col-top-left-open{
   display:block;
   position:absolute;
@@ -78,6 +83,10 @@
   background:#1b435d;
   z-index:5;
 }
+
+
+
+/* default opening */
 .row-top-left-open{
   display:block;
   position:absolute;
@@ -118,6 +127,10 @@
   z-index: 5;
   background:#1b435d;
 }
+
+
+
+/* default opening */
 .border-top-left-open{
   display:block;
   position:absolute;
