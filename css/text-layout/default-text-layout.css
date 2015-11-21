@@ -1,0 +1,43 @@
+/* ----------------------------------------- */
+/*        top-left text content here         */
+/* ----------------------------------------- */
+
+/* 1300 / 2 = 650px */
+
+.def-home-title{
+  width:80%;
+  margin:auto;
+  color:white;
+  /*border:1px dashed red;*/
+}
+.def-home-title .main-title{
+  position:absolute;
+  top:5%;
+  left:5%;
+  width:400px;
+  color:white;
+  font-family:'lato';
+  font-size:50px;
+  font-style:italic;
+}
+.def-home-title .title{
+  position:absolute;
+  bottom:8%; 
+  right:5%;
+  font-family:'playball';
+  font-size:45px;
+  text-align:right;
+  /*border:1px dashed green;*/
+}
+.def-home-title .kicker-container{
+  position:absolute;
+  bottom:3%;
+  right:5%;
+  font-family:'roboto';
+  font-style:italic;
+  font-size:20px;
+  text-align:right;
+  /*border:1px dashed grey;*/
+}
+.def-home-title .kicker-container span{
+}
