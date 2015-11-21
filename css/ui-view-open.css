@@ -7,7 +7,12 @@
   width:80%;
   height:80%;
   z-index:5;
-  background:#ff89fd;
+  background-color:#444;
+  background-image:url('../img/home-page.png');
+  background-size:contain;
+  background-position:right top;
+  background-repeat:no-repeat;
+  box-shadow:3px 3px 6px #333;
 }
 .def-bottom-left-open{
   display:block;
@@ -17,7 +22,10 @@
   width:80%;
   height:80%;
   z-index:5;
-  background:#d5eeff;
+  box-shadow:3px 3px 6px #333;
+  background: #50C9C3;
+  background: -webkit-linear-gradient(to left, #50C9C3 , #96DEDA);
+  background: linear-gradient(to left, #50C9C3 , #96DEDA);
 }
 .def-top-right-open{
   display:block;
@@ -27,7 +35,10 @@
   height:80%;
   width:80%;
   z-index: 5;
-  background:#78bbe6;
+  background: #2c3e50;
+  box-shadow:3px 3px 6px #333;
+  background: -webkit-linear-gradient(to left, #2c3e50 , #3498db);
+  background: linear-gradient(to left, #2c3e50 , #3498db);
 }
 .def-bottom-right-open{
   display:block;
@@ -37,7 +48,10 @@
   height:80%;
   width:80%;
   z-index: 5;
-  background:#1b435d;
+  background: #304352;  box-shadow:3px 3px 6px #333;
+  background: -webkit-linear-gradient(to left, #304352 , #d7d2cc);
+  background: linear-gradient(to left, #304352 , #d7d2cc);
+  box-shadow:3px 3px 6px #333;
 }
 
 

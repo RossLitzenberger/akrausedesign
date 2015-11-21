@@ -4,6 +4,9 @@
 
 /* 1300 / 2 = 650px */
 
+
+
+
 .def-home-title{
   width:80%;
   margin:auto;
@@ -22,7 +25,7 @@
 }
 .def-home-title .title{
   position:absolute;
-  bottom:8%; 
+  bottom:8%;
   right:5%;
   font-family:'playball';
   font-size:45px;
@@ -39,5 +42,69 @@
   text-align:right;
   /*border:1px dashed grey;*/
 }
-.def-home-title .kicker-container span{
+
+
+
+.def-about-title{
+  width:80%;
+  margin:auto;
+  color:444;
+}
+.def-about-title .title{
+  position:absolute;
+  bottom:8%;
+  left:5%;
+  font-family:'lato';
+  font-size:50px;
+}
+.def-about-title .title span{
+  font-family:'playball';
+}
+.def-about-content .skillset{
+  position:absolute;
+  top:10%;
+  right:55%;
+  height:50%;
+  width:40%;
+}
+.def-about-content .skillset .skill-title{
+  font-family:'playball';
+  font-size:40px;
+  text-align:center;
+}
+.def-about-content .skillset .skill-container{
+    height:100%;
+    width:80%;
+    margin:auto;
+    text-align:center;
+}
+.def-about-content .skillset .skill{
+  height:80px;
+  width:80px;
+  margin:10px;
+  border-radius:100%;
+  background:red;
+  display:inline-block;
+  position:relative;
+}
+.def-about-content .skillset .skill .middle-skill-title{
+  position:absolute;
+  top:50%;
+  left:50%;
+  height:6px;
+  width:auto;
+  margin:-3px 0 0 -3px;
+}
+
+.def-about-content .content{
+  display:block;
+  font-size:18px;
+  font-family:'lato';
+  font-style:italic;
+  position:absolute;
+  top:30%;
+  left:55%;
+  width:40%;
+  height:30%;
+  overflow:hidden;
 }

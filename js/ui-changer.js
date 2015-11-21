@@ -28,6 +28,7 @@ $(document).ready(function(){
     });
     $('#bottom-left').click(function(){
       $(this).toggleClass('def-bottom-left def-bottom-left-open');
+      $('.def-about-content').toggle();
     });
     $('#top-right').click(function(){
       $(this).toggleClass('def-top-right def-top-right-open');
