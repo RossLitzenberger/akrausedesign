@@ -156,7 +156,12 @@
 
 /* START blog section */
 
-
+.blog-container{
+  border:1px dashed red;
+  height:80%;
+  width:40%;
+  overflow-y:scroll;;
+}
 
 /* END blog section */
 
