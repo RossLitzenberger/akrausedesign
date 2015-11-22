@@ -67,8 +67,9 @@
   left:0;
   height:100%;
   width:75%;
-  background:#ff89fd;
+  background:#444;
   z-index:5;
+  animation:col_open .2s ease-in-out;
 }
 .col-bottom-left-open{
   display:block;
@@ -79,6 +80,7 @@
   width:75%;
   background:#d5eeff;
   z-index:5;
+  animation:col_open .2s ease-in-out;
 }
 .col-top-right-open{
   display:block;
@@ -89,6 +91,8 @@
   width:100%;
   background:#78bbe6;
   z-index:5;
+  animation:col_open .2s ease-in-out;
+
 }
 .col-bottom-right-open{
   display:block;
@@ -99,6 +103,8 @@
   width:75%;
   background:#1b435d;
   z-index:5;
+  animation:col_open .2s ease-in-out;
+
 }
 
 
