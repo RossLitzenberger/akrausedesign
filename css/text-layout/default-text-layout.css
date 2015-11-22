@@ -145,3 +145,19 @@
   height:30%;
   overflow:hidden;
 }
+.def-work-title{
+  position:absolute;
+  top:8%;
+  right:5%;
+  font-size:40px;
+  font-family:'lato';
+  font-style:italic;
+}
+.def-contact-title{
+  position:absolute;
+  bottom:8%;
+  right:5%;
+  font-size:40px;
+  font-family:'lato';
+  font-style:italic;
+}
