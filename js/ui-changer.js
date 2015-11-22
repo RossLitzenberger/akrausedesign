@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
 
-
+  
 
   // remove these classes when another layout has been triggered
-
+  /*
   $('#top-left').click(function(){
     $(this).toggleClass('def-top-left def-top-left-open');
   });
@@ -18,9 +18,9 @@ $(document).ready(function(){
   });
   $('#bottom-right').click(function(){
     $(this).toggleClass('def-bottom-right def-bottom-right-open');
-    // $('.def-contact-content').toggle();
+    $('.def-contact-content').toggle();
   });
-
+*/
 
 
   $('.pull-me').click(function(){
@@ -56,6 +56,16 @@ $(document).ready(function(){
     $('#row-layout').toggle('fast');
     $('#border-layout').toggle('fast');
     $('#default-layout').toggle('fast');
+
+
+
+    // trying to fix the opening / closing methods
+    $('#top-left').removeClass('def-top-left');
+    $('#bottom-left').removeClass('def-bottom-left');
+    $('#top-right').removeClass('def-top-right');
+    $('#bottom-right').removeClass('def-bottom-right');
+
+
 
     // toggle classes when clicked
     $('#top-left').toggleClass('def-top-left col-top-left');
@@ -95,6 +105,14 @@ $(document).ready(function(){
     $('#border-layout').toggle('fast');
     $('#default-layout').toggle('fast');
 
+
+    // fix?
+    $('#top-left').removeClass('def-top-left');
+    $('#bottom-left').removeClass('def-bottom-left');
+    $('#top-right').removeClass('def-top-right');
+    $('#bottom-right').removeClass('def-bottom-right');
+
+
     // toggle classes when clicked
     $('#top-left').toggleClass('def-top-left row-top-left');
     $('#bottom-left').toggleClass('def-bottom-left row-bottom-left');
@@ -131,6 +149,10 @@ $(document).ready(function(){
     $('#row-layout').toggle('fast');
     $('#column-layout').toggle('fast');
     $('#default-layout').toggle('fast');
+
+
+    // fix?
+
 
     // toggle classes when clicked
     $('#top-left').toggleClass('def-top-left border-top-left');
