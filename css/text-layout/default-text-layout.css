@@ -157,12 +157,50 @@
 /* START blog section */
 
 .blog-container{
-  border:1px dashed red;
-  height:80%;
-  width:40%;
-  overflow-y:scroll;;
+  margin-top:5%;
+  margin-left:2%;
+  height:70vh;
+  width:50%;
+  overflow:auto;
+  padding:15px 0;
 }
-
+.blog-container::-webkit-scrollbar{
+  width:2px !important;
+}
+.blog:first-child{
+  margin-top:20px;
+}
+.blog{
+  display:block;
+  position:relative;
+  margin: 0px 15px 30px 15px;
+  border-radius:5px;
+  box-shadow:1px 2px 10px 3px #555;
+  padding:12px 10px;
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.blog-title{
+  font-family:'roboto';
+  font-size:26px;
+  font-style:italic;
+  color:white;
+}
+.mini-blog-description{
+  font-family:'playball';
+  font-size:18px;
+  padding:10px 0;
+  color:rgba(255,255,255,0.8);
+}
+.date-created{
+  font-family:'lato';
+  font-size:16px;
+  color:rgba(0,0,0,0.5);
+  position:absolute;
+  top:2%;
+  right:2%;
+}
 /* END blog section */
 
 

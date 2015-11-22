@@ -10,9 +10,11 @@ $(document).ready(function(){
   });
   $('#bottom-left').click(function(){
     $(this).toggleClass('def-bottom-left def-bottom-left-open');
+    $('.def-about-content').toggle();
   });
   $('#top-right').click(function(){
     $(this).toggleClass('def-top-right def-top-right-open');
+    $('.def-work-content').toggle();
   });
   $('#bottom-right').click(function(){
     $(this).toggleClass('def-bottom-right def-bottom-right-open');
@@ -159,7 +161,7 @@ $(document).ready(function(){
   $('#default-layout').click(function(){
     // these arent required because it is already in default
     // mode, but I just want to follow the same style as
-    // with the others. 
+    // with the others.
     $('#row-layout').toggle('fast');
     $('#column-layout').toggle('fast');
     $('#border-layout').toggle('fast');

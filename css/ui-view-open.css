@@ -4,8 +4,8 @@
   position:absolute;
   top:0;
   left:0;
-  width:80%;
-  height:80%;
+  width:90%;
+  height:90%;
   z-index:5;
   background-color:#444;
   background-size:contain;
@@ -19,8 +19,8 @@
   position:absolute;
   bottom:0;
   left:0;
-  width:80%;
-  height:80%;
+  width:90%;
+  height:90%;
   z-index:5;
   box-shadow:3px 3px 6px #333;
   border-top-right-radius:10px;
@@ -33,8 +33,8 @@
   position:absolute;
   top:0;
   right:0;
-  height:80%;
-  width:80%;
+  height:90%;
+  width:90%;
   z-index: 5;
   background: #2c3e50;
   box-shadow:3px 3px 6px #333;
@@ -47,8 +47,8 @@
   position:absolute;
   bottom:0;
   right:0;
-  height:80%;
-  width:80%;
+  height:90%;
+  width:90%;
   z-index: 5;
   background: #304352;  box-shadow:3px 3px 6px #333;
   background: -webkit-linear-gradient(to left, #304352 , #d7d2cc);
