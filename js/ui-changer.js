@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
 
-  
+
 
   // remove these classes when another layout has been triggered
-  /*
+
   $('#top-left').click(function(){
     $(this).toggleClass('def-top-left def-top-left-open');
   });
@@ -20,17 +20,67 @@ $(document).ready(function(){
     $(this).toggleClass('def-bottom-right def-bottom-right-open');
     $('.def-contact-content').toggle();
   });
-*/
+
 
 
   $('.pull-me').click(function(){
     $('.ui-changer-menu').slideToggle('fast');
     $(this).toggle();
+
+    // remove opening classes on default view
+    $('.def-top-left').removeClass('def-top-left-open');
+    $('.def-bottom-left').removeClass('def-bottom-left-open');
+    $('.def-top-right').removeClass('def-top-right-open');
+    $('def-bottom-right').removeClass('def-bottom-right-open');
+
+    // remove opening classes on column view
+    $('.col-top-left').removeClass('col-top-left-open');
+    $('.col-bottom-left').removeClass('col-bottom-left-open');
+    $('.col-top-right').removeClass('col-top-right');
+    $('.col-bottom-right').removeClass('col-bottom-right');
+
+    // remove opening classes on row view
+    $('.row-top-left').removeClass('row-top-left-open');
+    $('.row-bottom-left').removeClass('row-bottom-left-open');
+    $('.row-top-right').removeClass('row-top-right-open');
+    $('.row-bottom-right').removeClass('row-botttom-right-open');
+
+    // remove opening classes on border view
+    $('.border-top-left').removeClass('border-top-left-open');
+    $('.border-bottom-left').removeClass('border-bottom-left-open');
+    $('.border-top-right').removeClass('border-top-right-open');
+    $('.border-bottom-right').removeClass('border-bottom-right-open');
+
   });
 
   $('#close').click(function(){
     $('.ui-changer-menu').slideToggle('fast');
     $('.pull-me').toggle();
+
+    // add opening classes on default view
+    $('.def-top-left').addClass('def-top-left-open');
+    $('.def-bottom-left').addClass('def-bottom-left-open');
+    $('.def-top-right').addClass('def-top-right-open');
+    $('def-bottom-right').addClass('def-bottom-right-open');
+
+    // add opening classes on column view
+    $('.col-top-left').addClass('col-top-left-open');
+    $('.col-bottom-left').addClass('col-bottom-left-open');
+    $('.col-top-right').addClass('col-top-right');
+    $('.col-bottom-right').addClass('col-bottom-right');
+
+    // add opening classes on row view
+    $('.row-top-left').addClass('row-top-left-open');
+    $('.row-bottom-left').addClass('row-bottom-left-open');
+    $('.row-top-right').addClass('row-top-right-open');
+    $('.row-bottom-right').addClass('row-botttom-right-open');
+
+    // add opening classes on border view
+    $('.border-top-left').addClass('border-top-left-open');
+    $('.border-bottom-left').addClass('border-bottom-left-open');
+    $('.border-top-right').addClass('border-top-right-open');
+    $('.border-bottom-right').addClass('border-bottom-right-open');
+
   });
 
   $('#close').hover(

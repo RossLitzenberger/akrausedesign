@@ -2,7 +2,6 @@
 /*        top-left text content here         */
 /* ----------------------------------------- */
 
-/* 1300 / 2 = 650px */
 
 
 
@@ -347,4 +346,16 @@
   font-size:40px;
   font-family:'lato';
   font-style:italic;
+}
+.social-links{
+  width: 100px;
+  height:40vh;
+  margin:20px 20px 0 20px;
+  border:1px dashed red;
+}
+.social{
+  height:80px;
+  width:80px;
+  border-radius:100%;
+  background:white;
 }
