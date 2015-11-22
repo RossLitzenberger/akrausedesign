@@ -193,13 +193,63 @@
   padding:10px 0;
   color:rgba(255,255,255,0.8);
 }
-.date-created{
+.blog-info{
   font-family:'lato';
   font-size:16px;
+  text-align:right;
   color:rgba(0,0,0,0.5);
   position:absolute;
   top:2%;
   right:2%;
+}
+.blog:hover .blog-info{
+  color:rgba(0,0,0,0.9);
+}
+.blog-body{
+  display:block;
+  font-family:'lato';
+  font-size:16px;
+  width:90%;
+  border-radius:5px;
+  margin:15px auto;
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+}
+.blog-more-btn{
+  font-family:'playball';
+  color:rgba(255,255,255,0.7);
+  background:rgba(0,50,200,0.3);
+  /* rgb(0,100,255) ish */
+  position:absolute;
+  bottom:2%;
+  right:3%;
+  padding:8px 25px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.blog-more-btn:hover{
+  background:rgba(0,50,200,0.5);
+  color:white;
+}
+.social-connections{
+  /*
+    not sure on placement yet, possibly a menu button
+    to activate these options
+   */
+}
+.blog-tags{
+  font-family:'roboto';
+  font-size:14px;
+  color:rgba(0,0,0,0.6);
+}
+.tag{
+  display:inline-block;
+  border:2px solid rgba(255,255,255,0.8);
+  padding:2px 5px;
+  color:white;
+  cursor:pointer;
+  margin:0px 3px;
+  border-radius:5px;
 }
 /* END blog section */
 
