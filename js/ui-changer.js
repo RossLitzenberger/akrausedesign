@@ -1,6 +1,25 @@
 
 $(document).ready(function(){
 
+
+
+  // remove these classes when another layout has been triggered
+
+  $('.def-top-left').click(function(){
+    $(this).toggleClass('def-top-left def-top-left-open');
+  });
+  $('.def-bottom-left').click(function(){
+    $(this).toggleClass('def-bottom-left def-bottom-left-open');
+  });
+  $('.def-top-right').click(function(){
+    $(this).toggleClass('def-top-right def-top-right-open');
+  });
+  $('.def-bottom-right').click(function(){
+    $(this).toggleClass('def-bottom-right def-bottom-right-open');
+  });
+
+
+
   $('.pull-me').click(function(){
     $('.ui-changer-menu').slideToggle('fast');
     $(this).toggle();
@@ -23,19 +42,6 @@ $(document).ready(function(){
 
 
     // something here that can make the windows open
-    $('#top-left').click(function(){
-      $(this).toggleClass('def-top-left def-top-left-open');
-    });
-    $('#bottom-left').click(function(){
-      $(this).toggleClass('def-bottom-left def-bottom-left-open');
-      $('.def-about-content').toggle();
-    });
-    $('#top-right').click(function(){
-      $(this).toggleClass('def-top-right def-top-right-open');
-    });
-    $('#bottom-right').click(function(){
-      $(this).toggleClass('def-bottom-right def-bottom-right-open');
-    });
 
 
   $('#column-layout').click(function(){
@@ -52,16 +58,18 @@ $(document).ready(function(){
 
 
     // something here that makes the windows open
-    $('#top-left').click(function(){
+    
+    // windows not opening correclty
+    $('.col-top-left').click(function(){
       $(this).toggleClass('col-top-left col-top-left-open');
     });
-    $('#bottom-left').click(function(){
+    $('.col-bottom-left').click(function(){
       $(this).toggleClass('col-bottom-left col-bottom-left-open');
     });
-    $('#top-right').click(function(){
+    $('.col-top-right').click(function(){
       $(this).toggleClass('col-top-right col-top-right-open');
     });
-    $('#bottom-right').click(function(){
+    $('.col-bottom-right').click(function(){
       $(this).toggleClass('col-bottom-right col-bottom-right-open');
     });
   });
