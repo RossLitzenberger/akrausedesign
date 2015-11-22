@@ -269,11 +269,23 @@
 
 .projects{
   position:absolute;
-  top:20%;
+  bottom:20%;
   right:4%;
   height:64vh;
   width:40%;
 }
+.project-description{
+  display:none;
+  margin-top:5%;
+  margin-left:2%;
+  height:70vh;
+  width:50%;
+  overflow:auto;
+  padding:15px 0;
+  background:white;
+}
+
+
 .tile-social-plugs{
   height:12%;
 }

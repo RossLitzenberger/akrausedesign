@@ -1,0 +1,14 @@
+/*
+$(document).ready(function(){
+  $('.tile').hover(
+    function(){
+      $('.blog-container').fadeOut('fast');
+      $('.project-description').fadeIn('fast');
+    },
+    function(){
+      $('.blog-container').fadeIn('fast');
+      $('.project-description').fadeOut('fast');
+    }
+  );
+});
+*/
