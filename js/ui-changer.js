@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 
 
+
   // remove these classes when another layout has been triggered
 
   $('#top-left').click(function(){
@@ -10,11 +11,11 @@ $(document).ready(function(){
   });
   $('#bottom-left').click(function(){
     $(this).toggleClass('def-bottom-left def-bottom-left-open');
-    // $('.def-about-content').toggle();
+    $('.def-about-content').toggle();
   });
   $('#top-right').click(function(){
     $(this).toggleClass('def-top-right def-top-right-open');
-    // $('.def-work-content').toggle();
+    $('.def-work-content').toggle();
   });
   $('#bottom-right').click(function(){
     $(this).toggleClass('def-bottom-right def-bottom-right-open');
