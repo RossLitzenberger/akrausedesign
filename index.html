@@ -30,6 +30,7 @@
     <link type='text/css' rel='stylesheet' href='css/ui-menu.css'>
     <link type='text/css' rel='stylesheet' href='css/ui-view-open.css'>
     <link type='text/css' rel='stylesheet' href='css/ui-views.css'>
+    <link type='text/css' rel='stylesheet' href='css/loading.css'>
 
     <!-- text content stylesheets -->
 
@@ -44,9 +45,10 @@
     <script src='js/ui-changer.js'></script>
     <script src='js/view-toggle.js'></script>
     <script src='js/project-description.js'></script>
+    <script src='js/loading.js'></script>
   </head>
   <body>
-
+    <div class='hide-viewport'>
     <!-- pull down menu -->
 
     <div class='pull-me'>
@@ -539,24 +541,25 @@
     </div>
 
     <!-- loading screen -->
+  </div>
 
-    <div id='loading-screen' style="display:none;">
+    <div id='loading-screen'>
     	<div class='img'>
-        	<img src='http://placehold.it/200x200'>
+      	<img src='http://placehold.it/200x200'>
+      </div>
+      <div class='loading_bar_container'>
+      	<div class='loading-title'>
+        	Loading...
         </div>
-        <div class='loading_bar_container'>
-        	<div class='loading-title'>
-            	Loading...
-            </div>
-            <div class='loading-bar'>
-            	<div class='loading-position'></div>
-            </div>
-            <div class='legal'>
-            	<div class='copyright'>
-                	&copy; 2015 A. Krause Design
-                </div>
-            </div>
+        <div class='loading-bar'>
+        	<div class='loading-position'></div>
         </div>
+      </div>
+      <div class='legal'>
+        <div class='copyright'>
+          &copy; 2016 A. Krause Design
+        </div>
+      </div>
     </div>
   </body>
 </html>
