@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.loading-position').css('width','100%');
   }
   function clearout(){
-    $('#loading-screen').fadeOut('slow');
+    $('#loading-screen').slideUp('slow');
   }
 
   function slideIn(){
