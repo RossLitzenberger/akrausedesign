@@ -4,7 +4,7 @@
 
 <hr />
 
-*#Legal#*
+*Legal*
 * &copy; 2015 A. Krause Design
 * This code is of my own creation and of my own ownership
 * Feel free to download, but do not distribute for profit gain
