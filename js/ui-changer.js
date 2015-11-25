@@ -1,4 +1,7 @@
 
+// Copyright (c) 2015 Andrew Krause Design All Rights Reserved.
+
+
 $(document).ready(function(){
 
 

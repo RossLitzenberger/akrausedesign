@@ -1,3 +1,6 @@
+
+// Copyright (c) 2015 Andrew Krause Design All Rights Reserved.
+
 $(document).ready(function(){
   function loadbar(){
     $('.loading-position').css('width','100%');
