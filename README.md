@@ -1,4 +1,3 @@
-#A. Krause Design | A Simplified Experience#
+***A. Krause Design | A Simplified Experience***
 
-
-####Who really needs a description when something that is this simple is already here. It describe's itself!####
+**Im not special enough to have a description or even type this grammatically correct**

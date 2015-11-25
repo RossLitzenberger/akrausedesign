@@ -1,0 +1,104 @@
+/* ------------------------------------ */
+/*         bottom-left content          */
+/* ------------------------------------ */
+
+.def-about-title{
+  width:80%;
+  margin:auto;
+  color:444;
+}
+.def-about-title .title{
+  position:absolute;
+  bottom:8%;
+  left:5%;
+  font-family:'lato';
+  font-size:50px;
+}
+.def-about-title .title span{
+  font-family:'playball';
+}
+.def-about-content .skillset{
+  position:absolute;
+  top:10%;
+  right:55%;
+  height:50%;
+  width:40%;
+  text-align:right;
+}
+.def-about-content .skillset .skill-title{
+  font-family:'playball';
+  font-size:40px;
+  text-align:center;
+}
+.def-about-content .skillset .skill-container{
+    height:100%;
+    width:90%;
+    margin:auto;
+    text-align:center;
+}
+.def-about-content .skillset .skill{
+  font-family:'playball';
+  font-size:18px;
+  text-align:left;
+  height:100px;
+  width:45%;
+  margin:0 5px;
+  display:inline-block;
+  position:relative;
+}
+.def-about-content .skillset .skill .sub-title{
+  margin-right:10px;
+}
+.skill-amt{
+  font-family:'lato';
+  font-size:14px;
+  color:white;
+}
+.html{
+  width:100%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.css{
+  width:100%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.js{
+  width:95%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.php{
+  width:70%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.organize{
+  width:100%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.adobe{
+  width:65%;
+  height:25px;
+  background:black;
+  border-radius:8px;
+}
+.def-about-content .content{
+  display:block;
+  font-size:18px;
+  font-family:'lato';
+  font-style:italic;
+  position:absolute;
+  top:30%;
+  left:55%;
+  width:40%;
+  height:30%;
+  overflow:hidden;
+}
