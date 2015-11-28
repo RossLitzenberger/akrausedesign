@@ -1,0 +1,72 @@
+.home{
+  height:100vh;
+  background-image:url('../../img/complex/complex_bg.jpeg');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  text-align:center;
+  color:white;
+}
+header{
+  height: 100px;
+}
+#logo img{
+  border-radius:100%;
+  float:left;
+  margin:10px;
+}
+header nav{
+  float:right;
+  font-family:'lato';
+  font-size:22px;
+  margin-top:15px;
+  margin-right:20px;
+}
+header nav a{
+  text-decoration:none;
+  padding:15px 0;
+  color:white;
+  display:inline-block;
+  min-width:100px;
+  margin:0px 10px;
+  border-bottom:3px solid transparent;
+}
+header nav a:hover{
+  border-bottom:3px solid rgba(255,255,255,0.3);
+}
+.home-title{
+  clear:both;
+  font-family:'lato';
+  width:60%;
+  margin:auto;
+}
+.home-title .title{
+  font-size:60px;
+  margin-top:4.5rem;
+}
+.home-title .kicker{
+  font-size:18px;
+}
+.site-options{
+  margin-top:14rem;
+}
+.slide-down, .simplify-it{
+  display:inline-block;
+  margin:0px 15px;
+  padding:15px 0;
+  min-width:250px;
+  border-radius:2rem;
+  border:3px solid transparent;
+}
+.slide-down{
+  background:#6C9B34;
+}
+.slide-down:hover{
+  border:3px solid rgba(255,255,255,0.5);
+}
+.simplify-it{
+  background:#051A38;
+}
+.simplify-it:hover{
+  border:3px solid rgba(255,255,255,0.5);
+}
