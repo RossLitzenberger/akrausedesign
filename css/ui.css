@@ -1,3 +1,301 @@
+/* UI MENU CSS */
+
+.ui-changer-menu{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  height:80px;
+  width:100%;
+  background:#222;
+  box-shadow:2px 2px 5px #222;
+  text-align:center;
+  z-index:200;
+}
+.ui-changer-menu img{
+  height:60px;
+  width:60px;
+  margin:10px 15px;
+  border-radius:6px;
+  box-shadow: 2px 2px 5px #222;
+}
+.ui-changer-menu img:hover{
+  animation: turn .2s infinite;
+}
+#close{
+  position:absolute;
+  top:20%;
+  left:2%;
+}
+#close:hover{
+  animation: turn .2s infinite;
+}
+#close img{
+  animation:none;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+}
+.pull-me{
+  display:block;
+  z-index: 100;
+  position:fixed;
+  top:-60px;
+  left:50%;
+  height:40px;
+  width:auto;
+  transition:top .1s ease-in-out;
+}
+.pull-me img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding:20px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  background:rgb(175,175,175);
+  box-shadow:1px 1px 6px #111;
+  display:block;
+  height:40px;
+  width:40px;
+  margin:-20px 0 0 -40px;
+  cursor:pointer;
+}
+.pull-me:hover{
+  position:absolute;
+  top:0;
+  transition:top .1s ease-in-out;
+}
+.pull-me img:hover{
+  background:rgb(175,175,175);
+}
+.down{
+  top:10%;
+}
+/* END UI MENU CSS */
+
+
+
+/* TEXT-LAYOUT CSS*/
+.home-title, .home-description,
+.about-title, .about-description,
+.work-title, .work-description,
+.contact-title, .contact-title{
+  display:block;
+}
+.def-home-title{
+
+}
+
+/* END TEXT-LAYOUT MENU CSS*/
+
+
+
+/* VIEW OPEN CSS*/
+
+/* Copyright (c) 2015 Andrew Krause Design All Rights Reserved. */
+
+/* default opening */
+.def-top-left-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:90%;
+  height:90%;
+  z-index:5;
+  background-color:#444;
+  background-size:contain;
+  background-position:right top;
+  background-repeat:no-repeat;
+  box-shadow:3px 3px 6px #333;
+  border-bottom-right-radius:10px;
+}
+.def-bottom-left-open{
+  display:block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:90%;
+  height:90%;
+  z-index:5;
+  box-shadow:3px 3px 6px #333;
+  border-top-right-radius:10px;
+  background: #50C9C3;
+  background: -webkit-linear-gradient(to left, #50C9C3 , #96DEDA);
+  background: linear-gradient(to left, #50C9C3 , #96DEDA);
+}
+.def-top-right-open{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  height:90%;
+  width:90%;
+  z-index: 5;
+  background: #2c3e50;
+  box-shadow:3px 3px 6px #333;
+  border-bottom-left-radius:10px;
+  background: -webkit-linear-gradient(to left, #2c3e50 , #3498db);
+  background: linear-gradient(to left, #2c3e50 , #3498db);
+}
+.def-bottom-right-open{
+  display:block;
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:90%;
+  width:90%;
+  z-index: 5;
+  background: #304352;  box-shadow:3px 3px 6px #333;
+  background: -webkit-linear-gradient(to left, #304352 , #d7d2cc);
+  background: linear-gradient(to left, #304352 , #d7d2cc);
+  box-shadow:3px 3px 6px #333;
+  border-top-left-radius:10px;
+}
+
+
+
+/* column opening */
+.col-top-left-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:75%;
+  background:#444;
+  z-index:5;
+  animation:col_open .2s ease-in-out;
+}
+.col-bottom-left-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:25%;
+  height:100%;
+  width:75%;
+  background:#d5eeff;
+  z-index:5;
+  animation:col_open .2s ease-in-out;
+}
+.col-top-right-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:25%;
+  height:100%;
+  width:100%;
+  background:#78bbe6;
+  z-index:5;
+  animation:col_open .2s ease-in-out;
+
+}
+.col-bottom-right-open{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  height:100%;
+  width:75%;
+  background:#1b435d;
+  z-index:5;
+  animation:col_open .2s ease-in-out;
+
+}
+
+
+
+/* default opening */
+.row-top-left-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:75%;
+  background:#ff89fd;
+  z-index:5;
+}
+.row-bottom-left-open{
+  display:block;
+  position:absolute;
+  top:25%;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#d5eeff;
+  z-index: 5;
+}
+.row-top-right-open{
+  display:block;
+  position:absolute;
+  bottom:25%;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 5;
+  background:#78bbe6;
+}
+.row-bottom-right-open{
+  display:block;
+  position:absolute;
+  bottom:0%;
+  left:0;
+  width:100%;
+  height:75%;
+  z-index: 5;
+  background:#1b435d;
+}
+
+
+
+/* default opening */
+.border-top-left-open{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:75%;
+  height:75%;
+  background:#ff89fd;
+  z-index: 5;
+}
+.border-bottom-left-open{
+  display:block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  height:75%;
+  width:75%;
+  background:#d5eeff;
+  z-index:5;
+}
+.border-top-right-open{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  height:75%;
+  width:75%;
+  background:#78bbe6;
+  z-index: 5;
+}
+.border-bottom-right-open{
+  display:block;
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:75%;
+  height:75%;
+  background:#1b435d;
+  z-index: 5;
+}
+/* END VIEW-OPEN CSS*/
+
+
+
+/* VIEWS CSS */
 
 /* Copyright (c) 2015 Andrew Krause Design All Rights Reserved. */
 
@@ -264,3 +562,5 @@
   box-shadow:1px 1px 6px #111;
 }
 /* END reset the display properties */
+
+/* END VIEWS CSS */
