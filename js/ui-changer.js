@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-  var ids = ['#top-left','#bottom-left','#top-right','#bottom-right'];
+  var ids = ['$("#top-left")','$("#bottom-left")','$("#top-right")','$("#bottom-right")'];
   var tiles = ['-top-left','-bottom-left','-top-right','-bottom-right'];
   var open = 'open';
   var types = ['def','col','row','border'];
@@ -12,12 +12,6 @@ $(document).ready(function(){
   var pos = [defPos,colPos,rowPos,borderPos];
   var views = ['#default-layout','#column-layout','#row-layout','#border-layout'];
 
-  var removeOpened = function(a) {
-    // a = ids, b = open
-    for(var i in a.length){
-      a[i].removeClass(types[i]+tiles[i]+open);
-    };
-  };
 
   // remove these classes when another layout has been triggered
 
@@ -53,30 +47,10 @@ $(document).ready(function(){
     $('.ui-changer-menu').slideToggle('fast');
     $('.pull-me').toggle();
 
-    // add opening classes on default view
-    $('.def-top-left').addClass('def-top-left-open');
-    $('.def-bottom-left').addClass('def-bottom-left-open');
-    $('.def-top-right').addClass('def-top-right-open');
-    $('def-bottom-right').addClass('def-bottom-right-open');
-
-    // add opening classes on column view
-    $('.col-top-left').addClass('col-top-left-open');
-    $('.col-bottom-left').addClass('col-bottom-left-open');
-    $('.col-top-right').addClass('col-top-right');
-    $('.col-bottom-right').addClass('col-bottom-right');
-
-    // add opening classes on row view
-    $('.row-top-left').addClass('row-top-left-open');
-    $('.row-bottom-left').addClass('row-bottom-left-open');
-    $('.row-top-right').addClass('row-top-right-open');
-    $('.row-bottom-right').addClass('row-botttom-right-open');
-
-    // add opening classes on border view
-    $('.border-top-left').addClass('border-top-left-open');
-    $('.border-bottom-left').addClass('border-bottom-left-open');
-    $('.border-top-right').addClass('border-top-right-open');
-    $('.border-bottom-right').addClass('border-bottom-right-open');
-
+    // remove classes with open
+    for(var i in vies.length){
+      views[i].removeClass(types[i]+tiles[i]+open);
+    }
   });
 
   $('#close').hover(
@@ -88,8 +62,7 @@ $(document).ready(function(){
     }
   );
 
-
-
+    //   var ids = ['#top-left','#bottom-left','#top-right','#bottom-right'];
     // something here that can make the windows open
 
 
