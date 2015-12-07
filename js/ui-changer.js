@@ -24,7 +24,7 @@ $(document).ready(function(){
 
   for (var i = clickIds.length; i--;) for (var j = clickIds[i].length; j--;){
     $(clickIds[i][j]).click(function() {
-      if(clickIds[i][j]).hasClass('def-'[])
+      alert('worked');
     });
   };
 
@@ -73,7 +73,12 @@ $(document).ready(function(){
     $('#default-layout').toggle('fast');
 
 
-
+        for(var i in ids.length){
+          if(ids[i].hasClass(types[i]+tiles[i])){
+            $(this).removeClass();
+            $(this).addClass(types[i]+tiles[i]);
+          }
+        }
     // trying to fix the opening / closing methods
     $('#top-left').removeClass('def-top-left');
     $('#bottom-left').removeClass('def-bottom-left');
