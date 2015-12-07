@@ -4,7 +4,13 @@
 
 $(document).ready(function(){
 
-
+  var ids = ['#top-left','#bottom-left','#top-right','#bottom-right'];
+  var tiles = ['-top-left','-bottom-left','-top-right','-bottom-right'];
+  var open = 'open';
+  var types = ['def','col','row','border'];
+  var defPos = 0, colPos = 1, rowPos = 2, borderPos = 3;
+  var pos = [defPos,colPos,rowPos,borderPos];
+  var views = ['#default-layout','#column-layout','#row-layout','#border-layout'];
 
 
   // remove these classes when another layout has been triggered
@@ -32,6 +38,17 @@ $(document).ready(function(){
     $(this).toggle();
 
     // remove opening classes on default view
+    $('.').click(function(){
+
+      var removeOpened = (a, b) => {
+        // a = ids, b = open
+        for(var i in a.length){
+
+        }
+      };
+
+    });
+
     $('.def-top-left').removeClass('def-top-left-open');
     $('.def-bottom-left').removeClass('def-bottom-left-open');
     $('.def-top-right').removeClass('def-top-right-open');
