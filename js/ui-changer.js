@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-  var ids = ['$("#top-left")','$("#bottom-left")','$("#top-right")','$("#bottom-right")'];
+  var ids = ['#top-left','#bottom-left','#top-right','#bottom-right'];
   var tiles = ['-top-left','-bottom-left','-top-right','-bottom-right'];
   var open = 'open';
   var types = ['def','col','row','border'];
@@ -12,25 +12,21 @@ $(document).ready(function(){
   var pos = [defPos,colPos,rowPos,borderPos];
   var views = ['#default-layout','#column-layout','#row-layout','#border-layout'];
 
+  var clickIds = [
+    [document.getElementById('top-left'), document.getElementById('bottom-left')],
+    [document.getElementById('top-right'), document.getElementById('bottom-right')]
+  ];
+
+
+
 
   // remove these classes when another layout has been triggered
 
-  $('#top-left').click(function(){
-    $(this).toggleClass('def-top-left def-top-left-open');
-  });
-  $('#bottom-left').click(function(){
-    $(this).toggleClass('def-bottom-left def-bottom-left-open');
-    $('.def-about-content').toggle();
-  });
-  $('#top-right').click(function(){
-    $(this).toggleClass('def-top-right def-top-right-open');
-    $('.def-work-content').toggle();
-  });
-  $('#bottom-right').click(function(){
-    $(this).toggleClass('def-bottom-right def-bottom-right-open');
-    $('.def-contact-content').toggle();
-  });
-
+  for (var i = clickIds.length; i--;) for (var j = clickIds[i].length; j--;){
+    $(clickIds[i][j]).click(function() {
+      if(clickIds[i][j]).hasClass('def-'[])
+    });
+  };
 
 
   $('.pull-me').click(function(){
