@@ -38,12 +38,12 @@ $(document).ready(function(){
     $(this).toggle();
 
     // remove opening classes on default view
-    $('.').click(function(){
+    $(views[0]).click(function(){
 
       var removeOpened = (a, b) => {
         // a = ids, b = open
         for(var i in a.length){
-
+          a[i].removeClass(types[i]+tiles[i]+open);
         }
       };
 
