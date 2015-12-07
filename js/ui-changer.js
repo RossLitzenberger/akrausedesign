@@ -12,6 +12,12 @@ $(document).ready(function(){
   var pos = [defPos,colPos,rowPos,borderPos];
   var views = ['#default-layout','#column-layout','#row-layout','#border-layout'];
 
+  var removeOpened = function(a) {
+    // a = ids, b = open
+    for(var i in a.length){
+      a[i].removeClass(types[i]+tiles[i]+open);
+    };
+  };
 
   // remove these classes when another layout has been triggered
 
@@ -37,41 +43,10 @@ $(document).ready(function(){
     $('.ui-changer-menu').slideToggle('fast');
     $(this).toggle();
 
-    // remove opening classes on default view
-    $(views[0]).click(function(){
-
-      var removeOpened = (a, b) => {
-        // a = ids, b = open
-        for(var i in a.length){
-          a[i].removeClass(types[i]+tiles[i]+open);
-        }
-      };
-
-    });
-
-    $('.def-top-left').removeClass('def-top-left-open');
-    $('.def-bottom-left').removeClass('def-bottom-left-open');
-    $('.def-top-right').removeClass('def-top-right-open');
-    $('def-bottom-right').removeClass('def-bottom-right-open');
-
-    // remove opening classes on column view
-    $('.col-top-left').removeClass('col-top-left-open');
-    $('.col-bottom-left').removeClass('col-bottom-left-open');
-    $('.col-top-right').removeClass('col-top-right');
-    $('.col-bottom-right').removeClass('col-bottom-right');
-
-    // remove opening classes on row view
-    $('.row-top-left').removeClass('row-top-left-open');
-    $('.row-bottom-left').removeClass('row-bottom-left-open');
-    $('.row-top-right').removeClass('row-top-right-open');
-    $('.row-bottom-right').removeClass('row-botttom-right-open');
-
-    // remove opening classes on border view
-    $('.border-top-left').removeClass('border-top-left-open');
-    $('.border-bottom-left').removeClass('border-bottom-left-open');
-    $('.border-top-right').removeClass('border-top-right-open');
-    $('.border-bottom-right').removeClass('border-bottom-right-open');
-
+    // remove classes with open
+    for(var i in views.length){
+      views[i].removeClass(types[i]+tiles[i]+open)
+    };
   });
 
   $('#close').click(function(){
