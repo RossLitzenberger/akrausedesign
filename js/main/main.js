@@ -1,5 +1,6 @@
 var ids = ['#top-left','#bottom-left','#top-right','#bottom-right'];
 var tiles = ['-top-left','-bottom-left','-top-right','-bottom-right'];
+var open = 'open';
 var types = ['def','col','row','border'];
 var defPos = 0, colPos = 1, rowPos = 2, borderPos = 3;
 var pos = [defPos,colPos,rowPos,borderPos];
@@ -22,16 +23,11 @@ var removeC = (a,b,c) => {
   }
 };
 
+var openC = (event) => {
+  return addC(ids, types, tiles) + event;
+};
+
 var diffClass = () => {
   defaults(ids);
   addC(ids, tiles, types);
 };
-
-$(window).load(function(){
-  defaults(ids);
-  for(var i = 0; i < ids.length; i++){
-    $(i).click(function(){
-      
-    });
-  };
-});

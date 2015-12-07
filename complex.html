@@ -15,36 +15,49 @@
     <link type='text/css' rel='stylesheet' href='css/normalize.css'>
     <link type='text/css' rel='stylesheet' href='css/complex_css/complex.css'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src='js/jquery/jquery-1.11.3.js'></script>
+
     <script src='js/complex/complex.js'></script>
+    <script src='js/complex/controller.js'></script>
   </head>
   <body>
     <div class='home'>
       <header>
-        <a href='' id='logo'>
-          <img src='http://www.placehold.it/75x75'>
-        </a>
-        <nav>
-          <!-- home about work contact -->
-          <a href=''>home</a>
-          <a href=''>about</a>
-          <a href=''>work</a>
-          <a href=''>contact</a>
-        </nav>
+        <div class='logo'>
+
+        </div>
+        <div class='menu'>
+          <nav>
+            <a href=''>home</a>
+            <a href=''>about</a>
+            <a href=''>work</a>
+            <a href=''>contact</a>
+          </nav>
+        </div>
       </header>
-      <div class='home-title'>
-        <div class='title'>
-          Andrew Krause Design
-        </div>
-        <div class='kicker'>
-          Taking <span class='siteType'>Complex</span><span class='siteType' style='display:none;'>Simple</span> to the next level
-        </div>
-        <div class='site-options'>
-          <div class='slide-down'>
-            Check me out
-          </div>
-          <div class='simplify-it'>
-            I like it simple
+    </div>
+    <div class='about'>
+      <div class='about-title'>
+        About Me
+      </div>
+      <div class='about-text'>
+
+      </div>
+      <div class='about-skills'>
+
+      </div>
+    </div>
+    <div class='work' ng-app='complexApp' ng-controller='WorkController'>
+      <div class='work-container'>
+        <div class='tiles'>
+          <div class='tile' ng-repeat='tile in tiles'>
+            <div class='cover-art'>
+              <img src='{{tile.cover}}'>
+            </div>
+            <div class='cover-description'>
+              {{tile.descripition}}
+            </div>
           </div>
         </div>
       </div>
