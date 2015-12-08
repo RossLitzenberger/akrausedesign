@@ -1,7 +1,32 @@
 /* row top-left */
-.row-top-left{
+#top-left{
+  overflow-x:hidden;
+}
+.row-home-title{
   font-family:'Lato';
-  font-size:50px;
+  font-size:40px;
+  height:24%;
+  width:100%;
+  color:white;
+}
+.row-home-title .main-title{
+  position:absolute;
+  left:0;
+  top:5px;
+}
+.row-home-title .title{
+  display:block;
+  width:500px;
+  position:absolute;
+  right:0;
+  top:0;
+}
+.row-home-title .kicker-container{
+  display:block;
+  width:500px;
+  position:absolute;
+  right:500px;
+  top:0;
 }
 /* END row top-left */
 
