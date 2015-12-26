@@ -548,17 +548,17 @@
 /* END border view */
 
 /* START reset the display properties */
-#column-layout, #row-layout{
+#cl, #rl{
   display:inline-block;
 }
-#default-layout, #border-layout{
+#dl, #bl{
   display:inline-block;
 }
 
-#column-layout img, #row-layout img{
+#cl img, #rl img{
   box-shadow:1px 1px 6px #111;
 }
-#default-layout img, #border-layout img{
+#dl img, #bl img{
   box-shadow:1px 1px 6px #111;
 }
 /* END reset the display properties */
