@@ -548,17 +548,10 @@
 /* END border view */
 
 /* START reset the display properties */
-#cl, #rl{
+.img_toggle{
   display:inline-block;
 }
-#dl, #bl{
-  display:inline-block;
-}
-
-#cl img, #rl img{
-  box-shadow:1px 1px 6px #111;
-}
-#dl img, #bl img{
+.img_toggle img{
   box-shadow:1px 1px 6px #111;
 }
 /* END reset the display properties */
