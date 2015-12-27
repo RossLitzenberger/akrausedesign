@@ -204,52 +204,6 @@
 
 }
 
-
-
-/* default opening */
-.row-top-left-open{
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:75%;
-  background:#ff89fd;
-  z-index:5;
-}
-.row-bottom-left-open{
-  display:block;
-  position:absolute;
-  top:25%;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#d5eeff;
-  z-index: 5;
-}
-.row-top-right-open{
-  display:block;
-  position:absolute;
-  bottom:25%;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index: 5;
-  background:#78bbe6;
-}
-.row-bottom-right-open{
-  display:block;
-  position:absolute;
-  bottom:0%;
-  left:0;
-  width:100%;
-  height:75%;
-  z-index: 5;
-  background:#1b435d;
-}
-
-
-
 /* default opening */
 .border-top-left-open{
   display:block;
@@ -432,60 +386,7 @@
 
 /* START row view */
 
-.row-top-left{
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:25%;
-  background-color:#444;
-  z-index: 4;
-  box-shadow:3px 3px 6px #888;
-  animation:row_move 1s ease-in-out;
-}
-.row-bottom-left{
-  display:block;
-  position:absolute;
-  top:25%;
-  left:0;
-  width:100%;
-  height:25%;
-  background: #50C9C3;
-  background: -webkit-linear-gradient(to left, #50C9C3 , #96DEDA);
-  background: linear-gradient(to left, #50C9C3 , #96DEDA);
-  box-shadow:3px 3px 6px #333;
-  z-index: 3;
-  animation:row_move .8s ease-in-out;
-}
-.row-top-right{
-  display:block;
-  position:absolute;
-  top:50%;
-  left:0;
-  width:100%;
-  height:25%;
-  background: #2c3e50;
-  background: -webkit-linear-gradient(to left, #2c3e50 , #3498db);
-  background: linear-gradient(to left, #2c3e50 , #3498db);
-  box-shadow:3px 3px 6px #333;
-  z-index: 2;
-  animation:row_move .6s ease-in-out;
-}
-.row-bottom-right{
-  display:block;
-  position:absolute;
-  top:75%;
-  left:0;
-  width:100%;
-  height:25%;
-  box-shadow:3px 3px 6px #333;
-  background: #304352;
-  background: -webkit-linear-gradient(to left, #304352 , #d7d2cc);
-  background: linear-gradient(to left, #304352 , #d7d2cc);
-  z-index: 1;
-  animation:row_move .4s ease-in-out;
-}
+
 
 /* END row view */
 
