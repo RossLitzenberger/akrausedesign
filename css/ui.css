@@ -386,7 +386,10 @@
 
 /* START row view */
 
-
+.tl-row, .bl-row, .tr-row, .br-row{
+  height:25%;
+  width:100%;
+}
 
 /* END row view */
 

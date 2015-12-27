@@ -6,7 +6,6 @@ var LAYOUTS = [
   "$('#border')"
 ];
 
-
 var flipper = function(flip){
   $(flip).click(function(){
     $(this).find('img').toggle();
