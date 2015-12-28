@@ -1,5 +1,0 @@
-/* New design for row layout */
-.tl-row, .bl-row, .tr-row, .br-row{
-  overflow-x:hidden;
-  height:25%;
-}
