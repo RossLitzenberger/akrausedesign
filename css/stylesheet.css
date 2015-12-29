@@ -1,7 +1,6 @@
 body,html{
   margin:0;
   padding:0;
-  background:#444;
 }
 
 a{
@@ -33,6 +32,15 @@ a{
 }
 /* end clearfix */
 
+/* class add here */
+.position_change{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:100%;
+}
+/* end class add here */
+
 .landing_page{
   background-image:url('../img/landingpage_background.jpeg');
   background-position:center;
@@ -40,6 +48,11 @@ a{
   background-repeat:no-repeat;
   height:100vh;
   text-align:center;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  z-index: 0;
 }
 header{
   padding:3rem 0;
@@ -119,4 +132,35 @@ header{
   border-top:4px solid #b20000;
   border-bottom:4px solid #b20000;
   color:#b20000;
+}
+.about_me{
+  position:relative;
+  z-index: 1;
+  background:rgba(68,68,68,0.9);
+  margin-top:100vh;
+  margin-bottom:0;
+  height:100vh;
+  width:100%;
+}
+.about_title{
+  font-family:'Raleway';
+  font-weight:300;
+  font-size:80px;
+  text-align:center;
+  color:#aaa;
+  width:50%;
+  margin:0 auto 50px auto;
+}
+.about_container{
+  padding:50px;
+}
+#blogs{
+  background:white;
+  position:relative;
+  z-index: 3;
+}
+#contact{
+  background:#444;
+  position:relative;
+  z-index: 4;
 }
