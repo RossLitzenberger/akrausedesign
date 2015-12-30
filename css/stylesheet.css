@@ -117,20 +117,22 @@ header{
   border-top:4px solid transparent;
 }
 .btn_highlight{
-  border:0px 4px 0px 4px solid rgba(68,68,68,0.3);
+  border-left:4px solid rgba(68,68,68,0.3);
+  border-right:4px solid rgba(68,68,68,0.3);
+  color:#444;
 }
 .btn_white{
-  border:0px 4px 0px 4px solid rgba(178,0,0,0.3);
+  border-left:4px solid rgba(178,0,0,0.3);
+  border-right:4px solid rgba(178,0,0,0.3);
+  color:#b20000;
 }
 .btn_highlight:hover{
   border-top:4px solid #444;
   border-bottom:4px solid #444;
-  color:#444;
 }
 .btn_white:hover{
   border-top:4px solid #b20000;
   border-bottom:4px solid #b20000;
-  color:#b20000;
 }
 .about_me{
   position:absolute;
