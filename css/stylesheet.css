@@ -116,27 +116,36 @@ header{
   display:inline-block;
   text-decoration:none;
   color:#ddd;
-
-  border-bottom:4px solid transparent;
-  border-top:4px solid transparent;
 }
 .btn_highlight{
+  border-top:4px solid transparent;
+  border-bottom:4px solid transparent;
   border-left:4px solid rgba(68,68,68,0.3);
   border-right:4px solid rgba(68,68,68,0.3);
-  color:#444;
+  transition: all .2s ease-in-out;
+    color:#444;
 }
 .btn_white{
+  border-top:4px solid transparent;
+  border-bottom:4px solid transparent;
   border-left:4px solid rgba(178,0,0,0.3);
   border-right:4px solid rgba(178,0,0,0.3);
+  transition: all .2s ease-in-out;
   color:#b20000;
 }
 .btn_highlight:hover{
   border-top:4px solid #444;
+  border-left:4px solid transparent;
   border-bottom:4px solid #444;
+  border-right:4px solid transparent;
+  transition: all .2s ease-in-out;
 }
 .btn_white:hover{
   border-top:4px solid #b20000;
+  border-left:4px solid transparent;
   border-bottom:4px solid #b20000;
+  border-right:4px solid transparent;
+  transition: all .2s ease-in-out;
 }
 .about_me{
   position:absolute;
@@ -168,6 +177,7 @@ header{
   height:85vh;
   width:100%;
   z-index: 3;
+  display:none;
 }
 .blog_open{
   left:0;

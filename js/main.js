@@ -27,12 +27,5 @@ $('.about_btn').click(function(){
 
 
 $('.blog_btn').click(function(){
-  $('#blogs').toggleClass('blog_open');
+  $('#blogs').slideToggle();
 });
-
-if($('#blogs').is(":visible")){
-  $('.main_nav').css('display','block');
-}
-else{
-  $('.main_nav').css('display','inline-block');
-}
