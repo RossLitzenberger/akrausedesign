@@ -4,13 +4,15 @@
 
 $('#discover').click(function(){
   $('.about_me').slideToggle("fast");
-  $('.about_btn').toggleClass('blur');
+  $('.home_btn').toggleClass('active');
+  $('.about_btn').toggleClass('active');
 });
 
 
 $('.about_btn').click(function(){
   $('.about_me').slideToggle('fast');
-  $(this).toggleClass('blur');
+  $('.home_btn').toggleClass('active');
+  $(this).toggleClass('active');
 })
 
 

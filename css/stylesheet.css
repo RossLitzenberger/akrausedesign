@@ -37,7 +37,7 @@ a{
 .fixed{
   position:fixed;
 }
-.blur{
+.active{
   -webkit-filter:blur(1px);
   filter:blur(1px);
 }
