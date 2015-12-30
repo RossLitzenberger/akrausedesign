@@ -33,11 +33,8 @@ a{
 /* end clearfix */
 
 /* class add here */
-.position_change{
+.fixed{
   position:fixed;
-  top:0;
-  width:100%;
-  height:100%;
 }
 /* end class add here */
 
@@ -134,10 +131,10 @@ header{
   color:#b20000;
 }
 .about_me{
-  position:relative;
+  position:absolute;
+  top:100%;
   z-index: 1;
-  background:rgba(68,68,68,0.9);
-  margin-top:100vh;
+  background:rgba(68,68,68,0.95);
   margin-bottom:0;
   height:100vh;
   width:100%;
@@ -158,9 +155,25 @@ header{
   background:white;
   position:relative;
   z-index: 3;
+  position:absolute;
+  top:200%;
+  width:100%;
+  height:100vh;
 }
 #contact{
   background:#444;
   position:relative;
   z-index: 4;
+  position:absolute;
+  top:300%;
+  width:100%;
+  height:40vh;;
+  color:white;
+  font-family:'Raleway';
+  font-size:40px;
+  font-weight:400;
+  text-align:center;
+}
+#contact a{
+  margin-top:50px;
 }
