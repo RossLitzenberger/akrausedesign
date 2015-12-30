@@ -24,10 +24,6 @@ $('.about_btn').click(function(){
   $(this).toggleClass('active');
 });
 
-
-$('.blog_btn').click(function(){
-  $('#blogs').slideToggle('fast');
-});
 $('.about_me').click(function(){
   // hide any pages in front of this if it is clicked
   if($('#blogs').is(':visible')){
@@ -38,5 +34,15 @@ $('.about_me').click(function(){
     $(this).slideToggle();
     $('.about_me').removeClass('active');
     $('.home_btn').toggleClass('active');
+  }
+});
+
+$('.blog_btn').click(function(){
+  $('#blogs').slideToggle('fast');
+});
+
+$('#blogs').click(function(){
+  if($(this).is(":visible")){
+    $(this).slideToggle();
   }
 })
