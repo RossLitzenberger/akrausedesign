@@ -12,6 +12,14 @@ $('.home_btn').click(function(){
 });
 
 $('#discover').click(function(){
+
+  if(!$('.about_btn').hasClass('active')){
+    $('.about_btn').addClass('active');
+  }
+  else{
+    $('.about_btn').removeClass('active');
+  }
+
   $('.about_me').slideToggle("fast");
   $('.home_btn').toggleClass('active');
   $('.about_btn').toggleClass('active');
