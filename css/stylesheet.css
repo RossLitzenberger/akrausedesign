@@ -1,6 +1,7 @@
 body,html{
   margin:0;
   padding:0;
+  overflow:hidden;
 }
 
 a{
@@ -82,8 +83,8 @@ header{
   border-bottom:2px solid transparent;
 }
 .main_nav ul li a:hover{
-  filter:blur(.5px);
-  -webkit-filter:blur(.5px);
+  filter:blur(1px);
+  -webkit-filter:blur(1px);
 }
 .landing_page h1{
   font-size:3.5rem;
@@ -115,10 +116,11 @@ header{
   border-bottom:4px solid transparent;
   border-top:4px solid transparent;
 }
-.btn_highlight, .btn_white{
-  border-right:4px solid rgba(200,200,200,0.3);
-  border-left:4px solid rgba(200,200,200,0.3);
-
+.btn_highlight{
+  border:0px 4px 0px 4px solid rgba(68,68,68,0.3);
+}
+.btn_white{
+  border:0px 4px 0px 4px solid rgba(178,0,0,0.3);
 }
 .btn_highlight:hover{
   border-top:4px solid #444;
@@ -132,12 +134,13 @@ header{
 }
 .about_me{
   position:absolute;
-  top:100%;
-  z-index: 1;
-  background:rgba(68,68,68,0.95);
-  margin-bottom:0;
-  height:100vh;
+  bottom:0;
+  height:85vh;
   width:100%;
+  z-index: 2;
+  background:rgba(68,68,68,0.97);
+  margin-bottom:0;
+  display:none;
 }
 .about_title{
   font-family:'Raleway';
@@ -153,19 +156,17 @@ header{
 }
 #blogs{
   background:white;
-  position:relative;
-  z-index: 3;
   position:absolute;
-  top:200%;
+  bottom:0;
+  height:85vh;
   width:100%;
-  height:100vh;
+  z-index: 3;
+  display:none;
 }
 #contact{
-  background:#444;
-  position:relative;
-  z-index: 4;
   position:absolute;
-  top:300%;
+  background:#444;
+  z-index: 4;
   width:100%;
   height:40vh;;
   color:white;
@@ -173,7 +174,26 @@ header{
   font-size:40px;
   font-weight:400;
   text-align:center;
+  display:none;
 }
-#contact a{
-  margin-top:50px;
+.bottom_nav{
+  display:none;
+}
+.bottom_nav .menu_view{
+  position:absolute;
+  font-size:40px;
+  color:white;
+  border-bottom:1px solid white;
+  width:4%;
+  height:4%;
+  border-radius:100%;
+  text-align:center;
+  bottom:5px;
+  left:50%;
+  transform:translate(-50%);
+  z-index: 10;
+}
+.menu_view:hover{
+  color:#444;
+  border-color:#444;
 }
