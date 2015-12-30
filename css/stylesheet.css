@@ -37,6 +37,10 @@ a{
 .fixed{
   position:fixed;
 }
+.blur{
+  -webkit-filter:blur(1px);
+  filter:blur(1px);
+}
 /* end class add here */
 
 .landing_page{
