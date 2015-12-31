@@ -41,6 +41,9 @@ a{
   -webkit-filter:blur(1px);
   filter:blur(1px);
 }
+.scroll{
+  overflow:scroll;
+}
 /* end class add here */
 
 .landing_page{
@@ -168,6 +171,17 @@ header{
 }
 .about_container{
   padding:50px;
+}
+.toolbelt{
+  margin-top:100px;
+  height: 400px;
+  font-family:'Raleway';
+  font-weight:300;
+  text-align:center;
+}
+.toolbelt_title{
+  color:#aaa;
+  font-size:
 }
 #blogs{
   background:white;
