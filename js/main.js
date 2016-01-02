@@ -27,17 +27,11 @@ function page_toggle(){
   // based on what has been clicked
 
   // check to see if the about page is visible
-  if($('#about').is(':visible')){
-    $('.toggle_down').toggle();
-    console.log('toggle activated');
-  }
-  else{
-    $('.toggle_down').css('display','none');
-  }
-
-  if(!(($(this).is(':visible') && $('.toggle_down').is(':visible')))){
+  if(!(($(this).is(':visible')))){
     $('.toggle_down i').click(function(){
       $('#about').slideToggle('fast');
+
+      
 
       // change the active classes back to original state
       $('.main_nav ul li').removeClass('active');
