@@ -20,33 +20,16 @@ var class_remove = function(class_name){
 
 
 // function to handle page toggling
-function page_toggle(){
-
-  // create a smart loop to determine what is being
-  // clicked and run the function appropriately
-  // based on what has been clicked
-
-  // check to see if the about page is visible
-  if(!(($(this).is(':visible')))){
-    $('.toggle_down i').click(function(){
-      $('#about').slideToggle('fast');
-
-      
-
-      // change the active classes back to original state
-      $('.main_nav ul li').removeClass('active');
-      $('.home_btn').addClass('active');
-
-      console.log('worked');
-      // bring class back to original state
-
-    });
-  }
-  else{
-    console.log('something went wrong');
-  }
+function page_toggle(page){
+  $('toggle_down i').click(function(){
+    $(page).slideToggle('fast');
+    console.log('fa-chevron-down was clicked');
+  });
 };
 
+function page_hider(){
+  console.log('page hider function worked');
+}
 
 // switch statement to toggle between actions
 function active_add(click_option){
@@ -76,7 +59,10 @@ function active_add(click_option){
       $('.contact_btn').removeClass('active');
 
       $('#about').slideToggle('fast');
+
+      // page changer functions
       page_toggle($('#about'));
+      page_hider();
 
       console.log('option 2 clicked');
       break;
