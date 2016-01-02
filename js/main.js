@@ -1,3 +1,6 @@
+$(window).load(function(){
+  $('.home_btn').addClass('active');
+});
 
 var class_selection = [
   $('.home_btn'), // 0
@@ -99,8 +102,6 @@ function active_add(click_option){
       break;
     default:
       $('home_btn').addClass('active');
-
-
       break;
   };
 };
