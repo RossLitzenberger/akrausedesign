@@ -12,41 +12,19 @@ var class_selection = [
 
 var i = 0;
 
-
-
-// when button is clicked, add active class to it
-
-// fixme please :)
-
-/*
-var class_add = function(btn){
-  $(this).addClass('active');
-  // check to see if the class were added or not
-  if(!($(this).hasClass(""))){
-    console.log('class added')
-  }
-  else{
-    console.log('no classes added');
-  }
-}
-*/
-
-
 // when a button is clicked, remove all instances of active besides the one that was clicked
 var class_remove = function(class_name){
   $(this).removeClass('active');
   console.log('class removed');
 };
 
-
-
-
-
+// switch statement to toggle between actions
 function active_add(click_option){
 
 
   switch(click_option){
     case 1:
+    // add active class
       $('.home_btn').addClass('active');
 
       // remove all the other classes
@@ -58,6 +36,7 @@ function active_add(click_option){
       console.log('option 1 clicked');
       break;
     case 2:
+      // add active class
       $('.about_btn').addClass('active');
 
       // remove all the other classes
@@ -69,6 +48,7 @@ function active_add(click_option){
       console.log('option 2 clicked');
       break;
     case 3:
+      // add active class
       $('.blog_btn').addClass('active');
 
       // remove all other classes
@@ -80,6 +60,7 @@ function active_add(click_option){
       console.log('option 3 clicked');
       break;
     case 4:
+      // add active class
       $('.create_btn').addClass('active');
 
       $('.home_btn').removeClass('active');
@@ -91,6 +72,7 @@ function active_add(click_option){
       console.log('option 4 clicked');
       break;
     case 5:
+      // add active class
       $('.contact_btn').addClass('active');
 
       $('.home_btn').removeClass('active');
@@ -101,6 +83,7 @@ function active_add(click_option){
       console.log('option 5 clicked');
       break;
     default:
+      // add active class in case something goes wrong
       $('home_btn').addClass('active');
       break;
   };
