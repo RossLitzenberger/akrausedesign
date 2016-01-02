@@ -12,6 +12,10 @@ var i = 0;
 
 
 // when button is clicked, add active class to it
+
+// fixme please :)
+
+/*
 var class_add = function(btn){
   $(this).addClass('active');
   // check to see if the class were added or not
@@ -22,6 +26,7 @@ var class_add = function(btn){
     console.log('no classes added');
   }
 }
+*/
 
 
 // when a button is clicked, remove all instances of active besides the one that was clicked
@@ -38,6 +43,13 @@ function active_add(click_option){
       $('.home_btn').addClass('active');
       console.log('option 1 clicked');
 
+      // check to see if this works or not
+      if(this.is('clicked')){
+        console.log('I was clicked');
+      }
+      else{
+        console.log('you cant write js apparently');
+      }
 
 
       break;
@@ -45,12 +57,26 @@ function active_add(click_option){
       $('.about_btn').addClass('active');
       console.log('option 2 clicked');
 
+      // check to see if this works or not
+      if(this.is('clicked')){
+        console.log('I was clicked');
+      }
+      else{
+        console.log('you cant write js apparently');
+      }
 
       break;
     case 3:
       $('.blog_btn').addClass('active');
       console.log('option 3 clicked');
 
+      // check to see if this works or not
+      if(this.is('clicked')){
+        console.log('I was clicked');
+      }
+      else{
+        console.log('you cant write js apparently');
+      }
 
       break;
     case 4:
@@ -58,12 +84,26 @@ function active_add(click_option){
       console.log('page not created yet, will link to admin.html');
       console.log('option 4 clicked');
 
+      // check to see if this works or not
+      if(this.is('clicked')){
+        console.log('I was clicked');
+      }
+      else{
+        console.log('you cant write js apparently');
+      }
 
       break;
     case 5:
       $('.contact_btn').addClass('active');
       console.log('option 5 clicked');
 
+      // check to see if this works or not
+      if(this.is('clicked')){
+        console.log('I was clicked');
+      }
+      else{
+        console.log('you cant write js apparently');
+      }
 
       break;
     default:
