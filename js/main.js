@@ -37,74 +37,65 @@ var class_remove = function(class_name){
 
 
 
+
+
 function active_add(click_option){
+
+
   switch(click_option){
     case 1:
       $('.home_btn').addClass('active');
+
+      // remove all the other classes
+      $('.about_btn').removeClass('active');
+      $('.blog_btn').removeClass('active');
+      $('.create_btn').removeClass('active');
+      $('.contact_btn').removeClass('active');
+
       console.log('option 1 clicked');
-
-      // check to see if this works or not
-      if(this.is('clicked')){
-        console.log('I was clicked');
-      }
-      else{
-        console.log('you cant write js apparently');
-      }
-
-
       break;
     case 2:
       $('.about_btn').addClass('active');
+
+      // remove all the other classes
+      $('.home_btn').removeClass('active');
+      $('.blog_btn').removeClass('active');
+      $('create_btn').removeClass('active');
+      $('.contact_btn').removeClass('active');
+
       console.log('option 2 clicked');
-
-      // check to see if this works or not
-      if(this.is('clicked')){
-        console.log('I was clicked');
-      }
-      else{
-        console.log('you cant write js apparently');
-      }
-
       break;
     case 3:
       $('.blog_btn').addClass('active');
+
+      // remove all other classes
+      $('.home_btn').removeClass('active');
+      $('.about_btn').removeClass('active');
+      $('.create_btn').removeClass('active');
+      $('.contact_btn').removeClass('active');
+
       console.log('option 3 clicked');
-
-      // check to see if this works or not
-      if(this.is('clicked')){
-        console.log('I was clicked');
-      }
-      else{
-        console.log('you cant write js apparently');
-      }
-
       break;
     case 4:
       $('.create_btn').addClass('active');
+
+      $('.home_btn').removeClass('active');
+      $('.about_btn').removeClass('active');
+      $('blog_btn').removeClass('active');
+      $('.contact_btn').removeClass('active');
+
       console.log('page not created yet, will link to admin.html');
       console.log('option 4 clicked');
-
-      // check to see if this works or not
-      if(this.is('clicked')){
-        console.log('I was clicked');
-      }
-      else{
-        console.log('you cant write js apparently');
-      }
-
       break;
     case 5:
       $('.contact_btn').addClass('active');
+
+      $('.home_btn').removeClass('active');
+      $('.about_btn').removeClass('active');
+      $('blog_btn').removeClass('active');
+      $('.create_btn').removeClass('active');
+
       console.log('option 5 clicked');
-
-      // check to see if this works or not
-      if(this.is('clicked')){
-        console.log('I was clicked');
-      }
-      else{
-        console.log('you cant write js apparently');
-      }
-
       break;
     default:
       $('home_btn').addClass('active');
