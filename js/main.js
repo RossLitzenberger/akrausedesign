@@ -2,14 +2,6 @@ $(window).load(function(){
   $('.home_btn').addClass('active');
 });
 
-var class_selection = [
-  $('.home_btn'), // 0
-  $('.about_btn'), // 1
-  $('.blog_btn'), // 2
-  $('.create_btn'), // 3
-  $('.contact_btn') // 4
-];
-
 var i = 0;
 
 // when a button is clicked, remove all instances of active besides the one that was clicked
