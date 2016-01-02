@@ -80,3 +80,38 @@ $('#contact').click(function(){
     $(this).slideToggle('fast');
   }
 });
+
+var class_add = function(){
+  $(this).addClass('active');
+}
+
+
+
+var class_remove = function(){
+  $(this).removeClass('active');
+};
+
+
+
+function active_add(click_option){
+  switch(click_option){
+    case 1:
+      class_add();
+      break;
+    case 2:
+      class_add();
+      break;
+    case 3:
+      class_add();
+      break;
+    case 4:
+      class_add();
+      break;
+    case 5:
+      class_add();
+      break;
+    default:
+      $('home_btn').addClass('active');
+      break;
+  };
+};
