@@ -42,7 +42,7 @@ a{
   filter:blur(1px);
 }
 .scroll{
-  overflow:scroll;
+  overflow:auto;
 }
 /* end class add here */
 
