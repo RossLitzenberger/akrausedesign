@@ -1,1 +1,127 @@
+html, body{
+  margin:0;
+  padding:0;
+  background:#eee;
+}
 
+/* toggle classes here */
+
+.disabled{
+  border: 3px solid transparent;
+  background: #aaaaaa;
+}
+
+/* end toggle classses here */
+
+.blog{
+  font-family:'Raleway';
+  overflow:auto;
+}
+.blog-background{
+  height:50vh;
+  width:100%;
+  margin:0;
+  background-image:url('../img/261H.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  position:fixed;
+  top:0;
+  z-index: 1;
+}
+.blog-container{
+  position:relative;
+  z-index: 2;
+  width:80%;
+  margin:0 auto;
+  background:#fff;
+  padding:20px;
+  top:250px;
+  border-radius:10px;
+  margin:50px auto;
+}
+.blog-title{
+  font-size:60px;
+  text-align:center;
+  color:#222;
+  padding:20px 0;
+}
+.blog-author{
+  text-align:center;
+  font-size:12px;
+}
+.blog-text p{
+  padding-top:10px;
+  padding-bottom:10px;
+  letter-spacing:0.05em;
+}
+.blog-feedback-container{
+  height:250px;
+}
+.voting-container{
+  width:10%;
+  text-align:center;
+  float:left;
+}
+.voting-container span{
+  color:#bbb;
+}
+.new-comment-container{
+  width:80%;
+  text-align:left;
+  float:right;
+}
+#comment_author:first-child{
+  width:40%;
+  font-size:16px;
+  padding:5px;
+  margin:5px;
+  border:none;
+  border-bottom:2px solid #bbb;
+}
+#comment_author:focus{
+  outline:none !important;
+  border-bottom:2px solid #0099ff;
+  color:#0099ff;
+}
+#textarea{
+  width:90%;
+  font-size:14px;
+  height:100px;
+  padding:5px;
+  margin:5px;
+  resize:none;
+  border:2px solid #bbb;
+}
+#textarea:focus{
+  outline:none !important;
+  border: 2px solid #0099ff;
+  color:#888;
+}
+#comment_submit{
+  border:none;
+  width:100px;
+  padding:10px 15px;
+  background:#0099ff;
+  color:white;
+  margin:10px;
+  border:3px solid white;
+}
+#comment_submit:focus{
+  outline:none;
+}
+#comment_submit:hover{
+  border-color:#0099ff;
+}
+#comment_author, #texarea_feedback{
+  display:inline-block;
+}
+#textarea_feedback{
+  width:30%;
+  text-align:right;
+  float:right;
+  margin-right:3rem;
+}
+#textarea_feedback span{
+  color:#bbb;
+}

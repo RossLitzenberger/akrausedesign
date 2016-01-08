@@ -20,8 +20,54 @@
     <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
   </head>
   <body>
-
-
+    <!-- practice blog page layout -->
+    <div class='blog'>
+      <div class='blog-background'></div>
+      <div class='blog-container'>
+        <div class='blog-title'>
+          First blog of 2016
+        </div>
+        <div class='blog-author'>
+          By: Andrew Krause
+        </div>
+        <!-- recognize when markdown language is written on dynamic pages -->
+        <div class='blog-text'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class='blog-feedback-container'>
+          <div class='voting-container'>
+            <div id='upvote'>
+              <i class='fa fa-angle-up fa-2x'></i>
+            </div>
+            <span id='vote'></span>
+            <div id='downvote'>
+              <i class='fa fa-angle-down fa-2x'></i>
+            </div>
+          </div>
+          <div class='new-comment-container'>
+            <form>
+              <input type='text' name='comment_author' id='comment_author' placeholder='Your name or email'>
+              <div id='textarea_feedback'></div>
+              <br>
+              <textarea id='textarea' placeholder='Your Comment'></textarea><br>
+              <button type='button' id='comment_submit' onclick="addComment() arrayCounter()">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class='comment-container'>
+        <div class='author'>
+          <p id='author'></p>
+        </div>
+        <div class='comment'>
+          <p id='comment'></p>
+        </div>
+      </div>
+    </div>
     <script src='js/jquery/jquery-2.1.4.min.js'></script>
     <script src='js/main.js'></script>
   </body>
