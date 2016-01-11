@@ -10,6 +10,9 @@ html, body{
   border: 3px solid transparent;
   background: #aaaaaa;
 }
+::-webkit-scrollbar{
+  display:none;
+}
 
 /* end toggle classses here */
 
@@ -33,30 +36,80 @@ html, body{
   position:relative;
   z-index: 2;
   width:80%;
-  margin:0 auto;
   background:#fff;
   padding:20px;
-  top:250px;
+  top: 20vh;
   border-radius:10px;
-  margin:50px auto;
+  margin:5% auto;
+}
+.blog-extras{
+  float:left;
+  color:#aaa;
+}
+.blog-extras i{
+  padding:15px;
+  display:inline-block;
+  border-radius:5px;
+}
+.fa-twitter:hover{
+  color:#fff;
+  background:#4099ff;
+}
+.fa-facebook:hover{
+  color:#fff;
+  background:#3b5998;
+}
+.fa-linkedin:hover{
+  color:#fff;
+  background:#ffa500;
+}
+.fa-envelope-o:hover{
+  color:#fff;
+  background:#4ca64c;
+}
+.minimize{
+  float:right;
+  color: #aaa;
+}
+.minimize i{
+  padding:15px;
+  display:inline-block;
+  border-radius:5px;
+}
+.minimize i:hover{
+  background: #dc143c;
+  color:#fff;
 }
 .blog-title{
   font-size:60px;
   text-align:center;
   color:#222;
-  padding:20px 0;
+  margin-top:75px;
+  padding:50px 0;
 }
 .blog-author{
   text-align:center;
   font-size:12px;
 }
+.blog-text{
+  margin-bottom:100px;
+}
 .blog-text p{
   padding-top:10px;
   padding-bottom:10px;
   letter-spacing:0.05em;
+  font-size:16px;
+  width:80%;
+  margin:0 auto;
 }
 .blog-feedback-container{
   height:250px;
+}
+#upvote i, #downvote i{
+  color:#888;
+}
+#upvote i:hover, #downvote i:hover{
+  color:#222;
 }
 .voting-container{
   width:10%;

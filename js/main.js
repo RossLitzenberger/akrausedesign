@@ -1,3 +1,19 @@
+// advanced options menu
+
+
+$('.option_nav').click(function(){
+  $('.blog_nav').toggle();
+});
+
+$('.share_nav').click(function(){
+  $('.share_options').toggle();
+});
+
+
+// END advanced options menu
+
+
+
 // new comment / new vote container
 var vote_count = 0;
 $('#vote').html(vote_count);
@@ -25,12 +41,12 @@ $('#textarea').keyup(function() {
 
 // iterate vote by 1
 $('#upvote').click(function(){
-  $('#vote').html(vote_count++);
+  $('#vote').html(++vote_count);
 });
 
 // deiterate vote by 1
 $('#downvote').click(function(){
-  $('#vote').html(vote_count--);
+  $('#vote').html(--vote_count);
 });
 
 // disable comments
@@ -57,7 +73,7 @@ function addComment(){
   // push the new comments to the array
   author_array.push(comment_container.author.value);
   comment_array.push(comment_container.comment.value);
-  
+
 
   // print out info from js object and array
 

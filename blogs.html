@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app='blogList'>
+  <head>
+    <meta charset="utf-8">
+    <title>Blogs List | A. Krause Design</title>
+    <meta name='author' content='Andrew Krause'>
+    <meta name='description' content='This is the blogging site for andrew krause, who is also a devleoper and a designer in the webz world. Can you find the secret code to see his concept website? No, well no hints here! His name will be known very soon to everyone who can think on their own.'>
+    <meta name='keywords' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- google fonts -->
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+    <!-- font awesome -->
+    <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+    <!-- main stylesheets -->
+    <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='nav-container'>
+        <div class='header-logo'>
+          A. Krause Design
+        </div>
+        <nav class='header-nav'>
+          <a href=''>home</a>
+          <a href=''>about</a>
+          <a href=''>blogs</a>
+          <a href=''>projects</a>
+          <a href=''>contact</a>
+        </nav>
+      </div>
+      <div class='header-title'>
+        <div class='title'>
+          andrew's ideas
+        </div>
+        <div class='kicker'>
+          they matter, especially to me
+        </div>
+      </div>
+    </div>
+    <div class='snapshot' ng-controller='snapshots'>
+      <div class='blog-snapshot'>
+        <div class='snapshot-actions'>
+          <i class='fa fa-expand'></i>
+        </div>
+        <div class='snapshot-title'>
+          {{ blog_title[1] }}
+        </div>
+        <div class='snapshot-details'>
+          <div class='snapshot-author'>
+            {{ blog_author }}
+          </div>
+          <div class='snapshot-date'>
+            {{ blog_date[1] }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      &copy;A. Krause Design
+    </div>
+
+
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src='js/jquery/jquery-2.1.4.min.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/controller.js'></script>
+    <script src='js/advanced_options.js'></script>
+  </body>
+</html>
