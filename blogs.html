@@ -47,15 +47,15 @@
         <div class='snapshot-actions'>
           <i class='fa fa-expand'></i>
         </div>
-        <div class='snapshot-title'>
-          {{ blog_title[1] }}
+        <div class='snapshot-title' ng-repeat='title in blog_title'>
+          {{ title }}
         </div>
         <div class='snapshot-details'>
-          <div class='snapshot-author'>
-            {{ blog_author }}
+          <div class='snapshot-author' ng-repeat='author in blog_author'>
+            {{ author }}
           </div>
-          <div class='snapshot-date'>
-            {{ blog_date[1] }}
+          <div class='snapshot-date' ng-repeat='date in blog_date'>
+            {{ date }}
           </div>
         </div>
       </div>

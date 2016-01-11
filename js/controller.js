@@ -15,7 +15,15 @@ app.controller('snapshots', function($scope){
     "Fourth blog of 2016",
     "Fifth blog of 2016"
   ];
-  $scope.blog_author = "Andrew Krause";
+
+  $scope.blog_author = [
+    "Andrew Krause",
+    "Andrew Krause",
+    "Andrew Krause",
+    "Andrew Krause",
+    "Andrew Krause"
+  ];
+
   $scope.blog_date = [
     "January 1, 2016",
     "January 2, 2016",
