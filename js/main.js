@@ -13,7 +13,6 @@ $('.share_nav').click(function(){
 // END advanced options menu
 
 
-
 // new comment / new vote container
 var vote_count = 0;
 $('#vote').html(vote_count);

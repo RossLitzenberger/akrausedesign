@@ -1,0 +1,19 @@
+html, body{
+  margin:0;
+  padding:0;
+}
+.side-nav{
+  width:15%;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background:black;
+  color:white;
+}
+.master-container{
+  width:85%;
+  position:absolute;
+  top:0;
+  right:0;
+}
