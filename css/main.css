@@ -1,18 +1,31 @@
+/* global declarations */
 html, body{
   margin:0;
   padding:0;
 }
+a{
+  text-decoration:none;
+  color:inherit;
+}
+/* END global declarations */
 .side-nav{
-  width:15%;
+  width:10%;
   height:100vh;
   position:fixed;
   top:0;
   left:0;
-  background:black;
+  background:#0099ff;
   color:white;
 }
+.logo{
+  font-family:'Open Sans';
+  border: 5px solid white;
+  text-align:center;
+  width:50%;
+  margin:15px auto;
+}
 .master-container{
-  width:85%;
+  width:90%;
   position:absolute;
   top:0;
   right:0;
@@ -23,6 +36,15 @@ html, body{
   background-repeat:no-repeat;
   background-position:center;
   height:500px;
+  font-family:'Open Sans';
+}
+.master-title{
+  font-size:50px;
+  color:white;
+}
+.master-kicker{
+  font-size:30px;
+  color:white;
 }
 .master-about{
   height: 1000px;
