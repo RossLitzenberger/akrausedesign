@@ -16,6 +16,11 @@
   width:100%;
   margin:0 auto;
 }
+.project{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+}
 
 /* project layouts */
 
@@ -32,9 +37,37 @@
   background-repeat:no-repeat;
   background-position:center;
 }
-.
+.project.large > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  top:-100%;
+  transition:top .2s ease-in-out;
+}
+.project.large:hover > .project-details{
+  position:absolute;
+  top:0;
+  transition:top .2s ease-in-out;
+}
+.project.large > .project-details >
+.project-title{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%);
+  font-size:24px;
+  border:3px solid white;
+  padding:10px;
 
-
+  /* animation */
+  /* put this into jquery */
+  -webkit-animation: fullopacity 2s ease-in-out;
+  -moz-animation: fullopacity 2s ease-in-out;
+  -o-animation: fullopacity 2s ease-in-out;
+  animation: fullopacity 2s ease-in-out;
+}
 .small{
   position:absolute;
   top:0;
@@ -45,8 +78,20 @@
 
   /* image */
 }
-
-
+.project.small > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  left:-100%;
+  transition:left .2s ease-in-out;
+}
+.project.small:hover > .project-details{
+  position:absolute;
+  left:0;
+  transition:left .2s ease-in-out;
+}
 
 .portrait{
   position:absolute;
@@ -58,8 +103,20 @@
 
   /* image */
 }
-
-
+.project.portrait > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  bottom:-100%;
+  transition:bottom .2s ease-in-out;
+}
+.project.portrait:hover > .project-details{
+  position:absolute;
+  bottom:0;
+  transition:bottom .2s ease-in-out;
+}
 
 .landscape{
   position:absolute;
@@ -71,7 +128,20 @@
 
   /* image */
 }
-
+.project.landscape > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  right:-100%;
+  transition:right .2s ease-in-out;
+}
+.project.landscape:hover > .project-details{
+  position:absolute;
+  right:0;
+  transition:right .2s ease-in-out;
+}
 
 
 .top-half{
@@ -83,6 +153,20 @@
   background:#0099ff;
 
   /* image */
+}
+.project.top-half > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  top:-100%;
+  transition:right .2s ease-in-out;
+}
+.project.top-half:hover > .project-details{
+  position:absolute;
+  top:0;
+  transition:top .2s ease-in-out;
 }
 
 
@@ -97,7 +181,51 @@
 
   /* image */
 }
+.project.bottom-half > .project-details{
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  color:white;
+  position:absolute;
+  bottom:-100%;
+  transition:bottom .2s ease-in-out;
+}
+.project.bottom-half:hover > .project-details{
+  position:absolute;
+  bottom:0;
+  transition: bottom .2s ease-in-out;
+}
+.project-more-btn{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  margin:auto;
+  height:40px;
+  color:black;
+  background:white;
+  text-align:center;
+}
 
+/* animation declarations */
+@-webkit-keyframes fullopacity{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fullopacity{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes fullopacity{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fullopacity{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* animations */
 
 
 
