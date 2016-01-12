@@ -3,7 +3,10 @@ html, body{
   padding:0;
   background:#eee;
 }
-
+a{
+  text-decoration:none;
+  color:inherit;
+}
 /* toggle classes here */
 
 .disabled{
