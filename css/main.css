@@ -54,6 +54,7 @@ a{
   background-size:cover;
   background-repeat:no-repeat;
   background-position:top right;
+  background-attachment:fixed;
   height:50vh;
   -webkit-filter: greyscale(50%);
   filter: greyscale(5);
