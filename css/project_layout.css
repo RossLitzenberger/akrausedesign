@@ -1,0 +1,70 @@
+.master-projects{
+  height: 120vh;
+  width:80%;
+  margin:0 auto;
+}
+.master-projects-title-container{
+  color:#b24592;
+  font-weight:300;
+  font-size: 30px;
+  padding:5%;
+  text-align:right;
+}
+.projects-container{
+  position:relative;
+  height:100%;
+  width:100%;
+  margin:0 auto;
+}
+
+/* project layouts */
+
+.large{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:50%;
+  background:green;
+}
+.small{
+  position:absolute;
+  top:0;
+  left:50%;
+  height:25%;
+  width:25%;
+  background:red;
+}
+.portrait{
+  position:absolute;
+  top:25%;
+  left:50%;
+  height:50%;
+  width:25%;
+  background:blue;
+}
+.landscape{
+  position:absolute;
+  top:50%;
+  left:0;
+  height:25%;
+  width:50%;
+  background:orange;
+}
+.top-half{
+  position:absolute;
+  top:0;
+  left:75%;
+  height:50%;
+  width:25%;
+  background:#0099ff;
+}
+.bottom-half{
+  position:absolute;
+  top:50%;
+  left:75%;
+  height:25%;
+  width:25%;
+  background:#ff0099;
+}
+/* END project layouts */
