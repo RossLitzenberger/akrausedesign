@@ -50,23 +50,6 @@
   top:0;
   transition:top .2s ease-in-out;
 }
-.project.large > .project-details >
-.project-title{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%);
-  font-size:24px;
-  border:3px solid white;
-  padding:10px;
-
-  /* animation */
-  /* put this into jquery */
-  -webkit-animation: fullopacity 2s ease-in-out;
-  -moz-animation: fullopacity 2s ease-in-out;
-  -o-animation: fullopacity 2s ease-in-out;
-  animation: fullopacity 2s ease-in-out;
-}
 .small{
   position:absolute;
   top:0;
@@ -115,6 +98,32 @@
   position:absolute;
   bottom:0;
   transition:bottom .2s ease-in-out;
+}
+.project.large > .project-details >
+.project-title,
+
+.project.small > .project-details >
+.project-title,
+
+.project.portrait > .project-details >
+.project-title,
+
+.project.landscape > .project-details >
+.project-title,
+
+.project.top-half > .project-details >
+.project-title,
+
+.project.bottom-half > .project-details >
+.project-title{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%);
+  font-size:24px;
+  border:3px solid white;
+  padding:10px;
+  box-sizing: border-box;
 }
 
 .landscape{
@@ -194,34 +203,5 @@
   bottom:0;
   transition: bottom .2s ease-in-out;
 }
-.project-more-btn{
-  position:absolute;
-  bottom:0;
-  color:#0099ff;
-  text-align:center;
-  width:100%;
-}
-
-/* animation declarations */
-@-webkit-keyframes fullopacity{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-moz-keyframes fullopacity{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-o-keyframes fullopacity{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes fullopacity{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-/* animations */
-
-
 
 /* END project layouts */
