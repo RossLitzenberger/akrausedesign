@@ -181,9 +181,39 @@ a{
   -webkit-filter:blur(1px);
 }
 /* END blog positions */
+
+
+/* project heights & widths */
+
+.large{
+  height:75vh;
+  width:75vw;
+
+}
+.left-half-size{
+  height:75vh;
+  width:35vw;
+}
+.right-half-size{
+  height:45vh;
+  width:75vw;
+}
+.medium{
+  height:45vh;
+  width:45vw;
+}
+.small{
+  height:30vh;
+  width:30vw;
+}
+
+/* END project heights & widths */
+
 .master-contact{
   height: 325px;
-  background:red;
+  background: #AA076B;
+  background: -webkit-linear-gradient(to left, #AA076B , #61045F);
+  background: linear-gradient(to left, #AA076B , #61045F);
   position:relative;
 }
 .master-contact a{
@@ -194,8 +224,3 @@ a{
   font-size:40px;
   color:white;
 }
-/* project heights & widths */
-
-
-
-/* END project heights & widths */
