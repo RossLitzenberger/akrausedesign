@@ -25,8 +25,16 @@
   left:0;
   width:50%;
   height:50%;
-  background:green;
+
+  /* image */
+  background-image:url('../img/akl.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
 }
+.
+
+
 .small{
   position:absolute;
   top:0;
@@ -34,7 +42,12 @@
   height:25%;
   width:25%;
   background:red;
+
+  /* image */
 }
+
+
+
 .portrait{
   position:absolute;
   top:25%;
@@ -42,7 +55,12 @@
   height:50%;
   width:25%;
   background:blue;
+
+  /* image */
 }
+
+
+
 .landscape{
   position:absolute;
   top:50%;
@@ -50,7 +68,12 @@
   height:25%;
   width:50%;
   background:orange;
+
+  /* image */
 }
+
+
+
 .top-half{
   position:absolute;
   top:0;
@@ -58,7 +81,12 @@
   height:50%;
   width:25%;
   background:#0099ff;
+
+  /* image */
 }
+
+
+
 .bottom-half{
   position:absolute;
   top:50%;
@@ -66,5 +94,11 @@
   height:25%;
   width:25%;
   background:#ff0099;
+
+  /* image */
 }
+
+
+
+
 /* END project layouts */
