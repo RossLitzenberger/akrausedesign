@@ -18,8 +18,7 @@
 }
 .project{
   overflow:hidden;
-  width:90%;
-  margin:0 auto;
+  width:100%;
 }
 
 /* project layouts */
@@ -198,13 +197,9 @@
 .project-more-btn{
   position:absolute;
   bottom:0;
-  left:0;
-  width:100%;
-  margin:auto;
-  height:40px;
-  color:black;
-  background:white;
+  color:#0099ff;
   text-align:center;
+  width:100%;
 }
 
 /* animation declarations */
