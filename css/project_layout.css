@@ -23,19 +23,6 @@
 
 /* project layouts */
 
-.large{
-  position:absolute;
-  top:0;
-  left:0;
-  width:50%;
-  height:50%;
-
-  /* image */
-  background-image:url('../img/akl.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center;
-}
 .project.large > .project-details{
   height:100%;
   width:100%;
@@ -49,16 +36,6 @@
   position:absolute;
   top:0;
   transition:top .2s ease-in-out;
-}
-.small{
-  position:absolute;
-  top:0;
-  left:50%;
-  height:25%;
-  width:25%;
-  background:red;
-
-  /* image */
 }
 .project.small > .project-details{
   height:100%;
@@ -75,16 +52,6 @@
   transition:left .2s ease-in-out;
 }
 
-.portrait{
-  position:absolute;
-  top:25%;
-  left:50%;
-  height:50%;
-  width:25%;
-  background:blue;
-
-  /* image */
-}
 .project.portrait > .project-details{
   height:100%;
   width:100%;
@@ -126,16 +93,7 @@
   box-sizing: border-box;
 }
 
-.landscape{
-  position:absolute;
-  top:50%;
-  left:0;
-  height:25%;
-  width:50%;
-  background:orange;
 
-  /* image */
-}
 .project.landscape > .project-details{
   height:100%;
   width:100%;
@@ -151,17 +109,6 @@
   transition:right .2s ease-in-out;
 }
 
-
-.top-half{
-  position:absolute;
-  top:0;
-  left:75%;
-  height:50%;
-  width:25%;
-  background:#0099ff;
-
-  /* image */
-}
 .project.top-half > .project-details{
   height:100%;
   width:100%;
@@ -177,16 +124,6 @@
   transition:top .2s ease-in-out;
 }
 
-.bottom-half{
-  position:absolute;
-  top:50%;
-  left:75%;
-  height:25%;
-  width:25%;
-  background:#ff0099;
-
-  /* image */
-}
 .project.bottom-half > .project-details{
   height:100%;
   width:100%;
