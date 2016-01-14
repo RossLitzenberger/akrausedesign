@@ -55,8 +55,10 @@ $(document).ready(function(){
   // if else statements for beginning of hover
   top.hover(function(){
     reorder(top,middle,bottom);
+
   }, function(){
     unorder();
+
   });
 
   middle.hover(function(){
