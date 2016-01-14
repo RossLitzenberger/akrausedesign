@@ -12,8 +12,15 @@ $(document).ready(function(){
   var middle = $('.middle');
   var bottom = $('.bottom');
 
-  function importance(){
-    $(this).css('z-index','3');
+  function reorder(important, mid, btm){
+    important.css('z-index','3');
+    mid.css('z-index','2');
+    btm.css('z-index','1');
+  }
+  function unorder(){
+    top.css('z-index','3');
+    middle.css('z-index','2');
+    bottom.css('z-index','1');
   }
 
   // when a blog is hovered, remove blur effect
@@ -23,36 +30,21 @@ $(document).ready(function(){
 
   // if else statements for beginning of hover
   top.hover(function(){
-    $(this).removeClass('blur');
-    middle.addClass('blur');
-    bottom.addClass('blur');
-    importance();
+    reorder(top,middle,bottom);
   }, function(){
-    $(this).removeClass('blur');
-    middle.addClass('blur');
-    bottom.addClass('blur');
+    unorder();
   });
 
   middle.hover(function(){
-    top.addClass('blur');
-    middle.removeClass('blur');
-    bottom.addClass('blur');
-    importance();
+    reorder(middle,top,bottom);
   }, function(){
-    top.removeClass('blur');
-    middle.addClass('blur');
-    bottom.addClass('blur');
+    unorder();
   });
 
   bottom.hover(function(){
-    top.addClass('blur');
-    middle.addClass('blur');
-    bottom.removeClass('blur');
-    importance();
+    reorder(bottom,middle,top);
   }, function(){
-    top.removeClass('blur');
-    middle.addClass('blur');
-    bottom.addClass('blur');
+    unorder();
   });
 
 });
