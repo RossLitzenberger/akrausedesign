@@ -14,15 +14,15 @@ $(document).ready(function(){
     });
   });
 
-  $('.mobile-btn').click(function(){
-
+  $('.mobile-btn').click(function(e){
     $('.main_nav').slideToggle();
 
+    $('.main_nav a').click(function(){
+      $('.main_nav').slideUp();
+    });
+    
+    e.preventDefault();
   });
 
-  $('.main_nav a').click(function(){
 
-    $('.main_nav').slideToggle();
-
-  });
 });
