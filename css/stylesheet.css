@@ -59,7 +59,7 @@ header{
 }
 #about{
   height:375px;
-  margin:20px 0;
+  padding:30px 0;
 }
 .about_title{
   font-size:24px;
@@ -73,6 +73,7 @@ header{
   color:#cfcfcf;
   font-size:22px;
   line-height:180%;
+  font-weight:300;
 }
 #toolbelt{
   height:650px;
@@ -147,10 +148,10 @@ header{
   height:100%;
   width:100%;
   background:transparent;
-  display:none;
-  -webkit-transition:background .2s ease-in-out;
-  -moz-transition:background .2s ease-in-out;
-  transition:background .2s ease-in-out;
+  opacity:0;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
 }
 .project_title{
   position:absolute;
@@ -164,10 +165,10 @@ header{
 }
 .project:hover .project_title_container{
   background:#e0e3da;
-  display:block;
-  -webkit-transition:all .2s ease-in-out;
-  -moz-transition:all .2s ease-in-out;
-  transition:all .2s ease-in-out;
+  opacity:1;
+  -webkit-transition:opacity .2s ease-in-out;
+  -moz-transition:opacity .2s ease-in-out;
+  transition:opacity .2s ease-in-out;
 }
 .work_more{
   position:absolute;
@@ -305,6 +306,10 @@ footer{
     clear:both;
     margin-left:0;
     width:100%;
+  }
+  .main_nav a:hover{
+    color: #566271;
+    font-weight:
   }
 
   #about{

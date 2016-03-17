@@ -18,13 +18,11 @@ $(document).ready(function(){
 
     $('.main_nav').slideToggle();
 
-    $('.main_nav a').click(function(){
+  });
 
-      $('.main_nav').slideToggle();
+  $('.main_nav a').click(function(){
 
-    });
-    if($('.main_nav a:first-child').is('click')){
-      $('.main_nav').slideToggle();
-    }
+    $('.main_nav').slideToggle();
+
   });
 });
