@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name='author' content='Andrew Krause'>
-    <meta name='description' content='Will Andrew really remember to change this descripition? Or will he just let you wonder whats really going on in his head? Who knows...'>
+    <meta name='description' content='Will Andrew really remember to change this description? Or will he just let you wonder what is really going on in his head? Who knows...'>
     <meta name='keywords' content=''>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
     <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src='js/main.js'></script>
     <title>A. Krause Design</title>
   </head>
   <body>
-    <header class='clear'>
-      <div class='main_logo'>AK</div>
-
+    <header id='home' class='clear'>
+      <div class='mobile-btn'><i class='fa fa-bars'></i></div>
+      <div class='main_logo'><a href='index.html'>AK</a></div>
       <nav class='main_nav'>
-        <a href='' class='active'>home</a>
-        <a href=''>about</a>
-        <a href=''>work</a>
-        <a href=''>contact me</a>
+        <a href='#home'>home</a>
+        <a href='#about'>about</a>
+        <a href='#work'>work</a>
+        <a href='#contact'>contact me</a>
       </nav>
 
       <div class='desk_bg'>
-        <img src='img/desk_img.png'>
+        <img src='img/desk_img.png' class='main_img'>
       </div>
     </header>
 
@@ -66,17 +68,22 @@
       <div class='work_title'>Unique Projects</div>
       <div class='projects_container'>
         <div class='project'>
-          <div class='project_title'>Brick &amp; Click</div>
+          <div class='project_title_container'>
+            <div class='project_title'>Brick &amp; Click</div>
+          </div>
         </div>
         <div class='project'>
-          <div class='project_title'>Smart[er] JavaScript</div>
+          <div class='project_title_container'>
+            <div class='project_title'>Smart[er] JavaScript</div>
+          </div>
         </div>
       </div>
       <div class='work_more'>More</div>
     </section>
 
     <section id='contact' class='clear'>
-      <form>
+      <div class='contact_title'>Borrow my Thinking Cap?</div>
+      <form class="" action="index.html" method="post">
         <input type='text' id='firstlast' name='firstlast' placeholder='First &amp; Last name'>
         <input type='text' id='email' name='email' placeholder='Your Email'><br>
         <textarea type='text' id='message' name='message' placeholder='Why you need my thinking cap...'></textarea><br>
