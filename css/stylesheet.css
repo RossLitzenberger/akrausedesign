@@ -59,7 +59,7 @@ header{
   height:auto;
 }
 #about{
-  height:100%;
+  height:120%;
   margin:50px 0;
 }
 .about_title{
@@ -298,9 +298,6 @@ footer{
   .main_nav a:hover{
     color:#cfcfcf;
   }
-  #about{
-    height:400px;
-  }
 
   .about_desc{
     font-size:20px;
@@ -327,12 +324,6 @@ footer{
   .main_logo{
     margin-top:30px;
   }
-
-  #about{
-    height:100%;
-    margin-bottom:50px;
-  }
-
   #toolbelt{
     height:1050px;
     background:#566271;
