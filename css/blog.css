@@ -1,0 +1,59 @@
+body, html{
+  font-family:'Open Sans';
+  font-weight:400;
+  text-align:center;
+  background:#566271;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+/* color palette */
+/*
+  #cfcfcf;
+  #566271;
+  #a591e2;
+  #e0e3da;
+*/
+/* END color palette */
+header{
+  height:50px;
+  width:100%;
+  background:#cfcfcf;
+  position:fixed;
+  z-index:100;
+  top:0;
+  left:0;
+}
+.logo{
+  color:#566271;
+  font-size:30px;
+  letter-spacing:-0.2em;
+  font-weight:bold;
+  float:left;
+  margin:5px 15px;
+}
+.main_title{
+  color:#566271;
+  float:right;
+  font-size:16px;
+  font-weight:300;
+  margin:10px 15px;
+}
+.logo, .main_title{
+  display:inline-block;
+  vertical-align:top;
+}
