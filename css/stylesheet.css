@@ -311,11 +311,7 @@ footer{
   }
 }
 /* IPHONE PORTRAIT VIEW */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait){
+@media only screen and (max-device-width: 667px){
   header{
     height:375px;
     position:relative;
@@ -327,9 +323,10 @@ footer{
   #toolbelt{
     height:1050px;
     background:#566271;
+    overflow:hidden;
   }
   #toolbelt > img{
-    height:100px;
+    height:10px;
     width:auto;
   }
   .toolbelt_title{

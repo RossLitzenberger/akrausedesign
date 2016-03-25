@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
+    <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
     <meta charset="utf-8">
     <meta name='author' content='Andrew Krause'>
     <meta name='description' content='Will Andrew really remember to change this description? Or will he just let you wonder what is really going on in his head? Who knows...'>
     <meta name='keywords' content=''>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="google-site-verification" content="H6BcLV_rJDx1RltyT2LyVevCcjCesgyxWBRby4dlaf8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
-    <link type='text/css' rel='stylesheet' href='css/stylesheet.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src='js/main.js'></script>
     <title>A. Krause Design</title>
   </head>
   <body>
@@ -33,7 +31,7 @@
     <section id='about' class='clear'>
       <div class='about_title'>About me</div>
       <div class='about_desc'>
-        Hey there! I'm Andrew. Originally from Kansas City, Missouri, I am a self taught web developer turned designer and and leaning towards moving into the full stack world, because why not. I'm also a student at Northwest Missouri State University up in Maryville, Missouri, where I am studying to become a web designer (for reals, with the degree of course). As a testament to how much I enjoy designing, I designed and developed this site in under 12 hours.
+        Hey there! I'm Andrew. Originally from Kansas City, Missouri, I am a self taught web developer turned designer and and leaning towards moving into the full stack world, because why not. I'm also a student at Northwest Missouri State University up in Maryville, Missouri, where I am studying to become a web designer. As a testament to how much I enjoy designing, I designed and developed this site in under 12 hours.
       </div>
     </section>
 
@@ -102,5 +100,41 @@
       </div>
       <div class='copyright'>&copy; 2016 Andrew Krause Design</div>
     </footer>
+
+    <!-- javascript codes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+        $('.mobile-btn').click(function(e){
+          $('.main_nav').slideToggle();
+
+          $('.main_nav a').click(function(){
+            $('.main_nav').slideUp();
+          });
+
+          e.preventDefault();
+        });
+      });
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75423608-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
