@@ -57,3 +57,6 @@ header{
   display:inline-block;
   vertical-align:top;
 }
+.projects-container{
+  margin-top:80px;
+}
