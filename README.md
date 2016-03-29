@@ -5,7 +5,7 @@
 1. [Changelog | A. Krause Design](http://www.akrausedesign.com/changelog)
 2. [Current Projects](http://www.akrausedesign.com/#work)
 
-### In progress: 
+### In progress:
 * Project view page
 * Project status page
 * Projects list page
