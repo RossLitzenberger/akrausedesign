@@ -58,5 +58,76 @@ header{
   vertical-align:top;
 }
 .projects-container{
-  margin-top:80px;
+  margin:80px auto 0px auto;
+  width:85%;
+  position:relative;
+}
+#project_type_selector{
+  font-size:50px;
+  font-weight:300;
+  color:#e0e3da;
+}
+#project_type_selector span{
+  vertical-align:center;
+  display:inline-block;
+}
+.hidden{
+  font-size:20px;
+  color:#e0e3da;
+  opacity:.2;
+  cursor:pointer;
+}
+.shown{
+  font-size:50px;
+  color:#e0e3da;
+  opacity:1;
+  cursor:pointer;
+}
+.hideMe{
+  display:none;
+}
+.professional_projects{
+  text-align:center;
+  width:100%;
+  margin:50px auto;
+}
+.prof-project{
+  width:40%;
+  height:400px;
+  margin:10px;
+  background:#a591e2;
+  display:inline-block;
+  vertical-align:top;
+  position:relative;
+  cursor:pointer;
+}
+.project_links{
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+}
+.projects-container-wide{
+  margin:80px auto 50px auto;
+  width:95%;
+  position:relative;
+}
+.selected_project{
+  position:absolute;
+  left:0;
+  width:50%;
+  top:0;
+  background-image:url('http://www.placehold.it/500x500');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.project_details{
+  position:absolute;
+  right:0;
+  width:50%;
+  height:100%;
+  top:0;
+  background:#e0e3da;
+
 }
