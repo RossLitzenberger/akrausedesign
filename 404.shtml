@@ -7,18 +7,24 @@
     <meta name='keywords' content=''>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type='text/css' rel='stylesheet' href='css/errors.css'>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src='js/main.js'></script>
     <title>404 | A. Krause Design</title>
   </head>
   <body>
-    <img src='img/404-cap.png'>
-    <div class='text_container'>
-      <h1>This page is still in thinking mode</h1>
-      <h4>
-        <a href='http://www.akrausedesign.com'>Go back</a>
-      </h4>
+    <div style='display:none'>
+      <img src='img/404-cap.png'>
+      <div class='text_container'>
+        <h1>This page is still in thinking mode</h1>
+        <h4>
+          <a href='http://www.akrausedesign.com'>Go back</a>
+        </h4>
+      </div>
+    </div>
+    <div style='display:block;'>
+      <img src='img/404-april.png'>
+      <i class='fa fa-cog fa-spin fa-2x'></i>
     </div>
   </body>
 </html>
