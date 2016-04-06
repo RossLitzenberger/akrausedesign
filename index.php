@@ -1,12 +1,17 @@
+<?php
+include 'php_includes/config.php';
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <?php
-      // include 'php_includes/config.php';
-      // include 'php_includes/page_configs.php'; 
       include 'php_includes/head.php';
+      $site_master = "A. Krause Design";
+      $site_page = "Main";
+      $site_title = $site_page . " | " . $site_master;
     ?>
-    <title>A. Krause Design</title>
+    <title><?php echo $site_title; ?></title>
   </head>
   <body>
     <header id='home' class='clear'>
